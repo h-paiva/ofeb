@@ -28,8 +28,9 @@ public class CameraConfig : MonoBehaviour
         }
         if(initialCamera == true)
         {   
-            targetPosition = new Vector3(Player.position.x + 35, Player.position.y + 1, Player.position.z);
-            transform.position = Vector2.Lerp(targetPosition, Player.position, 0.1f);
+            //controle da posição do personagem a partir do momento que a camera segue ele
+            targetPosition = new Vector3(Player.position.x + 31, Player.position.y +2, Player.position.z);
+            transform.position = Vector2.Lerp(targetPosition, Player.position, 0.01f);
         }
     }
     void EndIntroduction()
