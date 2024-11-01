@@ -50,4 +50,3 @@ public class World : MonoBehaviour
         Debug.Log("Reiniciando o Jogo");
     }
 }
-
