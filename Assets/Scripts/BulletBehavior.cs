@@ -4,39 +4,38 @@ using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour
 {
-    [SerializeField] private float normalBulletSpaeed;
-    [SerializeField] private float bulletLifeTime;
-    [SerializeField] private float distance;
+    [SerializeField] private float bulletSpeed = 10f;
+    [SerializeField] private float bulletLifeTime = 2f;
+    [SerializeField] private float distance = 0.1f;
     [SerializeField] private LayerMask whatCollisionBullet;
-    private Rigidbody2D rig;
+    [SerializeField] private int damage = 10;
+
+    private Rigidbody2D rb;
 
     private void Start() 
     {
-        rig = GetComponent<Rigidbody2D>();
-        SetStraighVelocity();
-        SetDestroyBullet();
-    }
-    void Update(){
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.forward, distance , whatCollisionBullet);
-        if(hitInfo.collider != null){
-            if(hitInfo.collider.CompareTag("Enemy")){
-                //hitInfo.collider.GetComponent<EnemyAI>().TakeDamage(damage);
-                Debug.Log("Acertou o inimigo");
-                Destroy(gameObject);  
-            }
-            if(hitInfo.collider.CompareTag("Ground")){
-                //hitInfo.collider.GetComponent<EnemyAI>().TakeDamage(damage);
-                Debug.Log("Acertou o chao");
-                Destroy(gameObject);  
-            }
-            
-        }
-    }
-    private void SetStraighVelocity()
-    {
-        rig.velocity = transform.right * normalBulletSpaeed;
-    }
-    void SetDestroyBullet(){
+        rb = GetComponent<Rigidbody2D>();
+        rb.velocity = transform.right * bulletSpeed;
         Destroy(gameObject, bulletLifeTime);
     }
+
+    void Update()
+    {
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance, whatCollisionBullet);
+        if (hitInfo.collider != null)
+        {
+            if (hitInfo.collider.CompareTag("Enemy"))
+            {
+                Debug.Log("Acertou o inimigo");
+                hitInfo.collider.GetComponent<EnemyUnified>().TakeDamage(damage);
+                Destroy(gameObject);
+            }
+            else if (hitInfo.collider.CompareTag("Ground"))
+            {
+                Debug.Log("Acertou o chão");
+                Destroy(gameObject);
+            }
+        }
+    }
 }
+
