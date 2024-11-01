@@ -11,12 +11,13 @@ public class CameraConfig : MonoBehaviour
     [SerializeField] public int timerIntroMax; // Velocidade de movimento da câmera
     [SerializeField] private Vector3 targetPosition; // Posição alvo para onde a câmera vai se mover
     [SerializeField] private Vector3 startPosition; // Posição inicial da câmera
+
     private  bool initialCamera = false;
     
     void Start()
     {   
         startPosition = transform.position; // Salva a posição inicial da câmera
-        targetPosition = new Vector3(startPosition.x + 30, startPosition.y, startPosition.z); // Define a posição alvo
+        targetPosition = new Vector3(startPosition.x + 90, startPosition.y, startPosition.z); // Define a posição alvo
         Invoke("EndIntroduction", timerIntroMax);
     }
     private void FixedUpdate() 
@@ -29,7 +30,7 @@ public class CameraConfig : MonoBehaviour
         if(initialCamera == true)
         {   
             //controle da posição do personagem a partir do momento que a camera segue ele
-            targetPosition = new Vector3(Player.position.x + 31, Player.position.y +2, Player.position.z);
+            targetPosition = new Vector3(Player.position.x + 91, Player.position.y +2, Player.position.z);
             transform.position = Vector2.Lerp(targetPosition, Player.position, 0.01f);
         }
     }
@@ -37,4 +38,5 @@ public class CameraConfig : MonoBehaviour
     {
         initialCamera = true;
     }
+
 }
