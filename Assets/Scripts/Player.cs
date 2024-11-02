@@ -12,7 +12,6 @@ public class Player : MonoBehaviour
     [SerializeField] public bool isJumping = false;
     private Rigidbody2D rig;
     private Animator anim;
-    private ArmControl armControl;
     void Awake() {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;

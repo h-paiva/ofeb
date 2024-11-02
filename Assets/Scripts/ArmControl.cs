@@ -8,15 +8,12 @@ public class ArmControl : MonoBehaviour
     [SerializeField] private Transform armPositionIdleWalk;
     [SerializeField] private Transform armPositionRunRight;
     [SerializeField] private Transform armPositionRunLeft;
-    [SerializeField] public bool isJumping = false;
     private Vector2 worldPosition;
     private Vector2 direction;
     private float angle;
-    private Animator anim;
     void Start()
     {
         transform.position = armPositionIdleWalk.position;
-        anim = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -28,12 +25,10 @@ public class ArmControl : MonoBehaviour
         //flip the gun when itreaches a 90 degree threshold
         angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        if(Input.GetKey(KeyCode.LeftShift) && Input.GetAxis("Horizontal") != 0f && isJumping == false){
+        if(Input.GetKey(KeyCode.LeftShift) && Input.GetAxis("Horizontal") != 0f){
             if(angle >= -90f && angle <= 90f)
             {
-                
                 transform.position = armPositionRunRight.position;
-                
             }
             else if(angle > 90f || angle < -90f)
             {

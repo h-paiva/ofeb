@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7599909294365960569}
   - component: {fileID: 9160379153503824032}
+  - component: {fileID: 5172271740715250846}
   - component: {fileID: 8458714441681108435}
+  - component: {fileID: 805862993578622624}
   - component: {fileID: 1436743045570855288}
-  - component: {fileID: 1064777410395378524}
-  - component: {fileID: 5493321892034364238}
   m_Layer: 6
   m_Name: bullet_Pixel
   m_TagString: Untagged
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: e7d79a922b3bfd849b1b12e15b43bf13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -88,42 +88,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!111 &8458714441681108435
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8887427462751909319}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 02ca3948b7a8e9c41b3210b8deb4355e, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 02ca3948b7a8e9c41b3210b8deb4355e, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!114 &1436743045570855288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8887427462751909319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 519fe7f27ecd98f459223330b1a397d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  normalBulletSpaeed: 30
-  bulletLifeTime: 5
-  distance: 0.5
-  whatCollisionBullet:
-    serializedVersion: 2
-    m_Bits: 136
---- !u!61 &1064777410395378524
-BoxCollider2D:
+--- !u!70 &5172271740715250846
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -155,19 +121,25 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.05}
-    newSize: {x: 0.16, y: 0.05}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.05}
-  m_EdgeRadius: 0
---- !u!50 &5493321892034364238
+  m_Size: {x: 0.18, y: 0.0001}
+  m_Direction: 0
+--- !u!111 &8458714441681108435
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887427462751909319}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 02ca3948b7a8e9c41b3210b8deb4355e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 02ca3948b7a8e9c41b3210b8deb4355e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!50 &805862993578622624
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -182,7 +154,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.6
+  m_GravityScale: 0.1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -190,7 +162,25 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 1
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1436743045570855288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8887427462751909319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519fe7f27ecd98f459223330b1a397d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalBulletSpaeed: 15
+  bulletLifeTime: 5
+  distance: 0.5
+  whatCollisionBullet:
+    serializedVersion: 2
+    m_Bits: 136
