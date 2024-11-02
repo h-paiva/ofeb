@@ -116,8 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519fe7f27ecd98f459223330b1a397d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalBulletSpeed: 10
-  bulletLifeTime: 2
+  normalBulletSpeed: 20
+  bulletLifeTime: 5
   distance: 0.5
   whatCollisionBullet:
     serializedVersion: 2
