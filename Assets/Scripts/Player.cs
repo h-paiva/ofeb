@@ -13,9 +13,15 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
     private ArmControl armControl;
+
+    [Header("Status do Jogador")]
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float currentHealth;
+
     void Awake() {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
+        currentHealth = maxHealth;
     }
 
     void Start()
@@ -92,5 +98,32 @@ public class Player : MonoBehaviour
         if(collision.gameObject.layer == 7){
             isJumping = true;
         }
+    }
+
+    // Método para receber dano
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        
+        // Opcional: Tocar animação de dano
+        // anim.SetTrigger("hurt");
+        
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    // Método quando o jogador morre
+    private void Die()
+    {
+        // Opcional: Tocar animação de morte
+        // anim.SetTrigger("die");
+        
+        // Implementar lógica de morte (game over, respawn, etc)
+        Debug.Log("Player Died");
+        
+        // Opcional: Desativar o jogador
+        // gameObject.SetActive(false);
     }
 }

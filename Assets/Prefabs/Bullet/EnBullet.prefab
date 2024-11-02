@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1064777410395378524}
   - component: {fileID: 5493321892034364238}
   m_Layer: 6
-  m_Name: bullet_Pixel
+  m_Name: EnBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   distance: 0.5
   whatCollisionBullet:
     serializedVersion: 2
-    m_Bits: 136
+    m_Bits: 384
   damage: 10
 --- !u!61 &1064777410395378524
 BoxCollider2D:

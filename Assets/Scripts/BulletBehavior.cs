@@ -1,42 +1,62 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour
 {
-    [SerializeField] private float normalBulletSpaeed;
+    [SerializeField] private float normalBulletSpeed;
     [SerializeField] private float bulletLifeTime;
     [SerializeField] private float distance;
     [SerializeField] private LayerMask whatCollisionBullet;
+    [SerializeField] private float damage = 10f; // Dano causado pela bala
+
     private Rigidbody2D rig;
 
     private void Start() 
     {
         rig = GetComponent<Rigidbody2D>();
-        SetStraighVelocity();
+        SetStraightVelocity();
         SetDestroyBullet();
     }
-    void Update(){
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.forward, distance , whatCollisionBullet);
-        if(hitInfo.collider != null){
-            if(hitInfo.collider.CompareTag("Enemy")){
-                //hitInfo.collider.GetComponent<EnemyAI>().TakeDamage(damage);
+
+    void Update()
+    {
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance, whatCollisionBullet);
+        if(hitInfo.collider != null)
+        {
+            if(hitInfo.collider.CompareTag("Enemy"))
+            {
+                Enemy enemy = hitInfo.collider.GetComponent<Enemy>();
+                if(enemy != null)
+                {
+                    enemy.TakeDamage(10f);
+                }
                 Debug.Log("Acertou o inimigo");
-                Destroy(gameObject);  
+                Destroy(gameObject);
             }
-            if(hitInfo.collider.CompareTag("Ground")){
-                //hitInfo.collider.GetComponent<EnemyAI>().TakeDamage(damage);
-                Debug.Log("Acertou o chao");
-                Destroy(gameObject);  
+            else if(hitInfo.collider.CompareTag("Player"))
+            {
+                Player player = hitInfo.collider.GetComponent<Player>();
+                if(player != null)
+                {
+                    player.TakeDamage(damage);
+                }
+                Debug.Log("Acertou o jogador");
+                Destroy(gameObject);
             }
-            
+            else if(hitInfo.collider.CompareTag("Ground"))
+            {
+                Debug.Log("Acertou o chão");
+                Destroy(gameObject);
+            }
         }
     }
-    private void SetStraighVelocity()
+
+    private void SetStraightVelocity()
     {
-        rig.velocity = transform.right * normalBulletSpaeed;
+        rig.velocity = transform.right * normalBulletSpeed;
     }
-    void SetDestroyBullet(){
+
+    void SetDestroyBullet()
+    {
         Destroy(gameObject, bulletLifeTime);
     }
 }
