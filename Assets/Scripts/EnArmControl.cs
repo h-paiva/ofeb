@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArmControl : MonoBehaviour
+public class EnArmControl : MonoBehaviour
 {
     [SerializeField] private GameObject arm;
     [SerializeField] private Transform armPositionIdleWalk;
@@ -12,9 +12,11 @@ public class ArmControl : MonoBehaviour
     private Vector2 worldPosition;
     private Vector2 direction;
     private float angle;
+    private Animator anim;
     void Start()
     {
         transform.position = armPositionIdleWalk.position;
+        anim = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -39,11 +41,8 @@ public class ArmControl : MonoBehaviour
             }
         }else
         {
+
             transform.position = armPositionIdleWalk.position;
         }
     }
-    public void PlayerIsJumping(bool jump) {
-        isJumping = jump;
-    }
-
 }
