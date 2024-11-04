@@ -116,13 +116,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519fe7f27ecd98f459223330b1a397d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalBulletSpeed: 20
+  normalBulletSpaeed: 30
   bulletLifeTime: 5
   distance: 0.5
   whatCollisionBullet:
     serializedVersion: 2
     m_Bits: 136
-  damage: 10
 --- !u!61 &1064777410395378524
 BoxCollider2D:
   m_ObjectHideFlags: 0
