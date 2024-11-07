@@ -18,11 +18,14 @@ public class EnemyPositionControll : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private float timeBetweenShots = 2f;
+
+    private Animator animator; // Para controlar o Animator
     // Start is called before the first frame update
     void Start()
     {
         arm.position = armPositionRight.position;
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -75,6 +78,7 @@ public class EnemyPositionControll : MonoBehaviour
         {
             bulletInst = Instantiate(bullet, bulletSpawnPoint.position, arm.transform.rotation);
             nextTimeToFire = Time.time + timeBetweenShots;
+
         }
     }
 }

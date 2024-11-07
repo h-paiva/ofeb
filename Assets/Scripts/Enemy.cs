@@ -47,12 +47,9 @@ public class Enemy : MonoBehaviour
         // Opcional: Tocar animação de morte
         // anim.SetTrigger("die");
         
-        // Opcional: Desabilitar componentes
-        if(rig != null) rig.isKinematic = true;
         
-        // Opcional: Desativar colisores
-        Collider2D col = GetComponent<Collider2D>();
-        if(col != null) col.enabled = false;
+        
+        
         
         // Opcional: Adicionar pontuação ou drops
         
