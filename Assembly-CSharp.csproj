@@ -66,18 +66,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EnemyPositionControll.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\SimularTecla.cs" />
     <Compile Include="Assets\Scripts\World.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Scripts\PlayerAimAndShoot.cs" />
     <Compile Include="Assets\Scripts\EnemyAimAndShoot.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\ArmControl.cs" />
     <Compile Include="Assets\Scripts\CameraConfig.cs" />
-    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
     <Compile Include="Assets\Scripts\BulletBehavior.cs" />
     <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Scripts\EnArmControl.cs" />
-    <Compile Include="Assets\Scripts\ArmControl.cs" />
     <Compile Include="Assets\Scripts\EnemyLifeBar.cs" />
+    <Compile Include="Assets\Scripts\PlayerScripts\PlayerAimAndShoot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

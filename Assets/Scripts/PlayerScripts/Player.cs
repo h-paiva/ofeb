@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     [Header("Controle do Pulo")] 
     [SerializeField] public float JumpForce;
     [SerializeField] public bool isJumping = false;
-    [SerializeField]  public Transform arm;
     [SerializeField]  public Transform armWalk;
     private Rigidbody2D rig;
     private Animator anim;
@@ -18,7 +17,7 @@ public class Player : MonoBehaviour
     [Header("Status do Jogador")]
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float currentHealth;
-    [SerializeField] private ArmControl armControl;
+    public ArmControl armControl;
 
     void Awake() {
         QualitySettings.vSyncCount = 0;
@@ -87,7 +86,6 @@ public class Player : MonoBehaviour
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
             anim.SetBool("jump", true);
             armControl.PlayerIsJumping(true);
-            arm.position = armWalk.position;
         }
     }
 
@@ -102,7 +100,6 @@ public class Player : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision) {
         if(collision.gameObject.layer == 7){
             isJumping = true;
-            armControl.PlayerIsJumping(true);
         }
     }
 
@@ -110,9 +107,6 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
-        
-        // Opcional: Tocar animação de dano
-        // anim.SetTrigger("hurt");
         
         if(currentHealth <= 0)
         {

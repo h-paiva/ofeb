@@ -26,19 +26,20 @@ public class ArmControl : MonoBehaviour
         //flip the gun when itreaches a 90 degree threshold
         angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        if(Input.GetKey(KeyCode.LeftShift) && Input.GetAxis("Horizontal") != 0f && isJumping == false){
+        if(Input.GetKey(KeyCode.LeftShift) && Input.GetAxis("Horizontal") != 0f && !isJumping){
             if(angle >= -90f && angle <= 90f)
             {
-                
+                Debug.Log("Entrou no primeiro if");
                 transform.position = armPositionRunRight.position;
-                
             }
             else if(angle > 90f || angle < -90f)
             {
+                Debug.Log("Entrou no segundo if");
                 transform.position = armPositionRunLeft.position;
             }
         }else
         {
+            Debug.Log("Entrou no else");
             transform.position = armPositionIdleWalk.position;
         }
     }
