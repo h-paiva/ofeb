@@ -8,11 +8,13 @@ public class Enemy : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
     private ArmControl armControl;
+    public EnemyLifeBar enemyLifeBar;
 
     [Header("Status")]
     [SerializeField] private float maxHealth = 100f; // Vida máxima do inimigo
     private float currentHealth; // Vida atual do inimigo
     private bool isDead = false; // Verifica se o inimigo está morto
+
 
     void Start()
     {
@@ -24,6 +26,7 @@ public class Enemy : MonoBehaviour
     // Método para receber dano
     public void TakeDamage(float damage)
     {
+        enemyLifeBar.DamageLife(damage);
         if (isDead) return; // Se já estiver morto, não recebe mais dano
 
         currentHealth -= damage;
