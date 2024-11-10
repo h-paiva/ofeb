@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     private Animator anim;
     private ArmControl armControl;
     public EnemyLifeBar enemyLifeBar;
+    public GameObject ArmEnemy;
 
     [Header("Status")]
     [SerializeField] private float maxHealth = 100f; // Vida máxima do inimigo
@@ -55,9 +56,11 @@ public class Enemy : MonoBehaviour
         
         
         // Opcional: Adicionar pontuação ou drops
+        Destroy(ArmEnemy, 0f);
+        anim.SetBool("death", true);
         
         // Destruir o inimigo após um delay (opcional)
-        Destroy(gameObject, 2f); // 2 segundos de delay
+        Destroy(gameObject, 1f); // 2 segundos de delay
     }
 
     // Método para verificar se está morto (pode ser útil para outros scripts)
