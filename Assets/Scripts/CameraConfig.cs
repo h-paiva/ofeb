@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class CameraConfig : MonoBehaviour
 {
+
+    /*
     [SerializeField] public Transform Player;
-    [SerializeField] private Transform endPosition;
     [SerializeField] public float speed; // Velocidade de movimento da câmera
     [SerializeField] public int timerIntroMax; // Velocidade de movimento da câmera
     [SerializeField] private Vector3 targetPosition; // Posição alvo para onde a câmera vai se mover
@@ -38,5 +39,5 @@ public class CameraConfig : MonoBehaviour
     {
         initialCamera = true;
     }
-
+    */
 }
