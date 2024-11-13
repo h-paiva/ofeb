@@ -31,9 +31,7 @@ public class EnArmControl : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftShift) && Input.GetAxis("Horizontal") != 0f && isJumping == false){
             if(angle >= -90f && angle <= 90f)
             {
-                
                 transform.position = armPositionRunRight.position;
-                
             }
             else if(angle > 90f || angle < -90f)
             {
@@ -41,7 +39,6 @@ public class EnArmControl : MonoBehaviour
             }
         }else
         {
-
             transform.position = armPositionIdleWalk.position;
         }
     }

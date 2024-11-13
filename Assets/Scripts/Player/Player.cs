@@ -10,7 +10,9 @@ public class Player : MonoBehaviour
     [Header("Controle do Pulo")] 
     [SerializeField] public float JumpForce;
     [SerializeField] public bool isJumping = false;
-    [SerializeField]  public Transform armWalk;
+    [SerializeField] public Transform armWalk;
+    [SerializeField] public GameObject armShoot;
+    public PlayerLifeBar playerLifeBar;
     private Rigidbody2D rig;
     private Animator anim;
 
@@ -107,6 +109,7 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        playerLifeBar.DamageLife(damage);
         
         if(currentHealth <= 0)
         {
@@ -121,6 +124,8 @@ public class Player : MonoBehaviour
         // anim.SetTrigger("die");
         
         // Implementar lógica de morte (game over, respawn, etc)
+        armShoot.gameObject.SetActive(false);
+        anim.SetBool("dead", true);
         Debug.Log("Player Died");
         
         // Opcional: Desativar o jogador
