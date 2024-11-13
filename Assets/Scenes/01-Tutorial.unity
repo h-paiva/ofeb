@@ -1854,6 +1854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c71d63a4abd1bb4a9ea74dda0703851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 264143209}
 --- !u!4 &228547962
 Transform:
   m_ObjectHideFlags: 0
@@ -1891,6 +1892,7 @@ MonoBehaviour:
   startPosition: {x: 0, y: 0, z: 0}
   Warning: {fileID: 0}
   LifeHUD: {fileID: 0}
+  cameraConfig: {fileID: 0}
 --- !u!1 &236235457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,6 +2309,11 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!4 &264143209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 934270483794034645, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+  m_PrefabInstance: {fileID: 6823229957341961560}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &300147564
 GameObject:
   m_ObjectHideFlags: 0
@@ -11435,6 +11442,7 @@ MonoBehaviour:
   startPosition: {x: 0, y: 0, z: 0}
   Warning: {fileID: 1703370197}
   LifeHUD: {fileID: 1689950027}
+  cameraConfig: {fileID: 0}
 --- !u!4 &1496629925
 Transform:
   m_ObjectHideFlags: 0

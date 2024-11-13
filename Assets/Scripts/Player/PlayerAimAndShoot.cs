@@ -12,6 +12,12 @@ public class PlayerAimAndShoot : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private SpriteRenderer body;
+    public CameraConfig cameraConfig;
+
+    private void Start() 
+    {
+        cameraConfig = FindObjectOfType<CameraConfig>();
+    }
 
     void Update()
     {   
@@ -34,11 +40,13 @@ public class PlayerAimAndShoot : MonoBehaviour
         {
             localScale.y = -1f;
             body.flipX = true;
+            cameraConfig.CameraFollowPlayer("left");
         }
         else
         {
             localScale.y = 1f;
             body.flipX = false;
+            cameraConfig.CameraFollowPlayer("right");
         }
         gun.transform.localScale = localScale;
 

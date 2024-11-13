@@ -5,7 +5,10 @@ using UnityEngine;
 
 public class CameraConfig : MonoBehaviour
 {
-
+    [SerializeField] private Transform Player;
+    private string positionPlayer =  "right";
+    private Vector3 targetPosition; // Posição alvo para onde a câmera vai se mover
+    private bool starFollow = false;
     /*
     [SerializeField] public Transform Player;
     [SerializeField] public float speed; // Velocidade de movimento da câmera
@@ -40,4 +43,25 @@ public class CameraConfig : MonoBehaviour
         initialCamera = true;
     }
     */
+    public void CameraFollowPlayerActive(bool starFollowPlayer)
+    {
+        starFollow = starFollowPlayer;
+    }
+    public void CameraFollowPlayer(string position)
+    {
+        if(starFollow)
+        {
+            positionPlayer = position;
+            if(positionPlayer  == "right")
+            {
+                targetPosition = new Vector3(Player.position.x + 86, Player.position.y +2, Player.position.z);
+                transform.position = Vector2.Lerp(targetPosition, Player.position, Player.position.z);
+            }
+            else
+            {
+                targetPosition = new Vector3(Player.position.x + 82, Player.position.y +2, Player.position.z);
+                transform.position = Vector2.Lerp(targetPosition, Player.position, Player.position.z);
+            }
+        }
+    }
 }

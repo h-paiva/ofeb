@@ -16,12 +16,17 @@ public class IntroTutorial : MonoBehaviour
     // Start is called before the first frame update
     private  bool introStart = false;
     private  bool introFinish = false;
+    public CameraConfig cameraConfig;
+
+    private void Start() 
+    {
+        cameraConfig = FindObjectOfType<CameraConfig>();
+    }
 
     private void FixedUpdate() 
     {
         if(Input.GetKey(KeyCode.Space)){
             StartIntroGame();
-            Destroy(Warning, 0);
         }
         if(introStart & !introFinish)
         {
@@ -32,17 +37,15 @@ public class IntroTutorial : MonoBehaviour
     }
     public void StartIntroGame()
     {   
-        IntroGame();
-        Invoke("EndIntroduction", timerIntroMax);
-    }
-    public void IntroGame()
-    {   
         if (introStart) return; // Evita que o método seja chamado múltiplas vezes
         introStart = true;
+        Destroy(Warning, 0);
+        Invoke("EndIntroduction", timerIntroMax);
     }
     void EndIntroduction()
     {
         introFinish = true;
         LifeHUD.gameObject.SetActive(true);
+        cameraConfig.CameraFollowPlayerActive(true);
     }
 }
