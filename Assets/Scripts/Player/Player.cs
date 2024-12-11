@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] public bool isJumping = false;
     [SerializeField] public Transform armWalk;
     [SerializeField] public GameObject armShoot;
+    [SerializeField] private Transform restartMenu;
     public PlayerLifeBar playerLifeBar;
     private Rigidbody2D rig;
     private Animator anim;
@@ -126,9 +127,7 @@ public class Player : MonoBehaviour
         // Implementar lógica de morte (game over, respawn, etc)
         armShoot.gameObject.SetActive(false);
         anim.SetBool("dead", true);
-        Debug.Log("Player Died");
-        
-        // Opcional: Desativar o jogador
-        // gameObject.SetActive(false);
+        Destroy(gameObject, 5f);
+        restartMenu.gameObject.SetActive(true);
     }
 }
