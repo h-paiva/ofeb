@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -16,12 +17,119 @@ public class Enemy : MonoBehaviour
     private float currentHealth; // Vida atual do inimigo
     private bool isDead = false; // Verifica se o inimigo está morto
 
+    [Header("FSM Configurações")]
+    private Transform player;
+    public float talkRange = 10f; // Distância para falar
+    public float attackRange = 5f; // Distância para atacar
+    public float distanceToPlayer; // Torna a distância ao jogador pública
+
+    private enum State { Idle, Talk, Attack }
+    private State currentState = State.Idle;
+
+    private float dialogueTimer;
+
+    [Header("Diálogo")]
+    public Canvas dialogueCanvas; // Canvas para exibir falas
+    public Text dialogueText; // Texto dentro do Canvas
+    public float dialogueDuration = 2f; // Duração de cada fala
+    [TextArea(2, 5)] public List<string> randomPhrases; // Lista de frases aleatórias
 
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>(); 
         currentHealth = maxHealth;
+
+        if (dialogueCanvas != null)
+        {
+            dialogueCanvas.gameObject.SetActive(false);
+        }
+    }
+
+    void Update()
+    {
+        if (isDead) return;
+
+        // Calcula e atualiza a distância ao jogador
+        distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // Lógica da Máquina de Estados Finitos
+        switch (currentState)
+        {
+            case State.Idle:
+                HandleIdleState(distanceToPlayer);
+                break;
+            case State.Talk:
+                HandleTalkState(distanceToPlayer);
+                break;
+            case State.Attack:
+                HandleAttackState(distanceToPlayer);
+                break;
+        }
+    }
+
+    private void HandleIdleState(float distanceToPlayer)
+    {
+        if (distanceToPlayer <= talkRange)
+        {
+            currentState = State.Talk;
+            ShowRandomDialogue();
+        }
+    }
+
+    private void HandleTalkState(float distanceToPlayer)
+    {
+        if (distanceToPlayer > talkRange)
+        {
+            currentState = State.Idle;
+            HideDialogue();
+        }
+        else if (distanceToPlayer <= attackRange)
+        {
+            currentState = State.Attack;
+            HideDialogue();
+        }
+        else
+        {
+            dialogueTimer -= Time.deltaTime;
+            if (dialogueTimer <= 0)
+            {
+                ShowRandomDialogue();
+            }
+        }
+    }
+
+    private void HandleAttackState(float distanceToPlayer)
+    {
+        if (distanceToPlayer > attackRange)
+        {
+            currentState = State.Talk;
+            ShowRandomDialogue();
+        }
+        else
+        {
+            anim.SetBool("isAttacking", true);
+            // Lógica de ataque aqui
+        }
+    }
+
+    private void ShowRandomDialogue()
+    {
+        if (dialogueCanvas != null && randomPhrases.Count > 0)
+        {
+            string randomPhrase = randomPhrases[Random.Range(0, randomPhrases.Count)];
+            dialogueText.text = randomPhrase;
+            dialogueCanvas.gameObject.SetActive(true);
+            dialogueTimer = dialogueDuration;
+        }
+    }
+
+    private void HideDialogue()
+    {
+        if (dialogueCanvas != null)
+        {
+            dialogueCanvas.gameObject.SetActive(false);
+        }
     }
 
     // Método para receber dano
@@ -73,5 +181,14 @@ public class Enemy : MonoBehaviour
     public float GetCurrentHealth()
     {
         return currentHealth;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue; // Cor para a área de falar
+        Gizmos.DrawWireSphere(transform.position, talkRange);
+
+        Gizmos.color = Color.red; // Cor para a área de ataque
+        Gizmos.DrawWireSphere(transform.position, attackRange);
     }
 }
