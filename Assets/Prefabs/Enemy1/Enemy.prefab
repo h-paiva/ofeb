@@ -242,7 +242,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd6fb13df06c1e4fb7c2f944b0e70d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyLifeBar: {fileID: 0}
+  ArmEnemy: {fileID: 3227566437647720954}
   maxHealth: 100
+  talkRange: 10
+  attackRange: 5
+  distanceToPlayer: 0
+  dialogueCanvas: {fileID: 0}
+  dialogueText: {fileID: 0}
+  dialogueDuration: 2
+  randomPhrases:
+  - "A patrulha est\xE1 tranquila, nenhum inimigo \xE0 vista."
+  - Continuem alertas, os Aliados podem estar por perto.
+  - Por que sempre escolhemos as rotas mais longas?
+  - Espero que a patrulha acabe logo.
+  - "Est\xE1 frio aqui fora, vamos terminar r\xE1pido."
+  - "Parece que eles n\xE3o est\xE3o nesta \xE1rea."
+  - "Devemos estar atentos, algo n\xE3o parece certo."
+  - "Espero que o caf\xE9 ainda esteja quente no acampamento."
+  - Mais uma volta e voltamos para a base.
+  - "Este sil\xEAncio \xE9 perturbador."
+  - "N\xE3o ou\xE7o nada h\xE1 horas, ser\xE1 um bom sinal?"
+  - "Fiquem juntos, n\xE3o se dispersem!"
+  - Parece que estamos patrulhando o nada.
+  - "Minhas botas est\xE3o me matando!"
+  - "Se encontrarmos algo, espero que n\xE3o seja uma bomba."
+  - Estamos quase terminando o turno.
+  - "Espero que o pr\xF3ximo grupo assuma logo."
+  - "Acho que ouvi algo... Ah, s\xF3 o vento."
+  - Mais um dia, mais uma patrulha.
+  - "Nada para relatar, capit\xE3o."
 --- !u!114 &1819651864441949644
 MonoBehaviour:
   m_ObjectHideFlags: 0
