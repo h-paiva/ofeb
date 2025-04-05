@@ -3026,8 +3026,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 82.548584, y: 18}
+  m_SizeDelta: {x: 649.6473, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339292782
 MonoBehaviour:
@@ -3042,7 +3042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -13228,6 +13228,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 3d8c3a34c812d7443a8f0b26767c4c23, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 3d8c3a34c812d7443a8f0b26767c4c23, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
