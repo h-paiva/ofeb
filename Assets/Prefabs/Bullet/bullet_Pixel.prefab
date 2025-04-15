@@ -118,10 +118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   normalBulletSpeed: 20
   bulletLifeTime: 5
-  distance: 0.5
-  whatCollisionBullet:
-    serializedVersion: 2
-    m_Bits: 136
   damage: 10
 --- !u!61 &1064777410395378524
 BoxCollider2D:
@@ -152,7 +148,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
