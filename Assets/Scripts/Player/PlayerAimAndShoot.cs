@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PlayerAimAndShoot : MonoBehaviour
 {
+    // Variáveis internas
     private Vector2 worldPosition;
     private Vector2 direction;
     private float angle;
-    private GameObject bulletInst;
 
+    // Referências públicas/serializadas
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
@@ -15,63 +16,60 @@ public class PlayerAimAndShoot : MonoBehaviour
 
     [SerializeField] private float bulletForce = 10f;
 
-    private void Start() 
+    private void Start()
     {
-        cameraConfig = FindObjectOfType<CameraConfig>();
+        // Busca automática de referências se necessário
+        if (cameraConfig == null)
+            cameraConfig = FindObjectOfType<CameraConfig>();
 
-        if (gun == null || bullet == null || bulletSpawnPoint == null)
-        {
-            Debug.LogWarning("⚠️ Variáveis obrigatórias ('gun', 'bullet' ou 'bulletSpawnPoint') não estão atribuídas no PlayerAimAndShoot!");
-        }
+        // Validações
+        if (gun == null || bullet == null || bulletSpawnPoint == null || body == null)
+            Debug.LogWarning("⚠️ Algumas referências não foram atribuídas no Inspector!");
     }
 
-    void Update()
-    {   
-        HandlerGunRotation(); 
-        HandlerGunShooting();
+    private void Update()
+    {
+        HandleGunRotation();
+        HandleGunShooting();
     }
 
-    private void HandlerGunRotation()
+    private void HandleGunRotation()
     {
-        // rotate the gun towards the mouse position
+        if (gun == null || Camera.main == null || body == null)
+            return;
+
+        // Pega a posição do mouse no mundo
         worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         direction = (worldPosition - (Vector2)gun.transform.position).normalized;
-        gun.transform.right = direction;
 
-        // flip the gun when it reaches a 90 degree threshold
+        // Calcula o ângulo para rotação
         angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        Vector3 localScale = new Vector3(1f, 1f, 1f);
+        // Aplica a rotação diretamente no eixo Z
+        gun.transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        // Reflete personagem e braço baseado na direção do mouse
         if (angle > 90 || angle < -90)
         {
-            localScale.y = -1f;
             body.flipX = true;
-            cameraConfig.CameraFollowPlayer("left");
+            gun.transform.localScale = new Vector3(1, -1, 1); // Inverte o braço
+            cameraConfig?.CameraFollowPlayer("left");
         }
         else
         {
-            localScale.y = 1f;
             body.flipX = false;
-            cameraConfig.CameraFollowPlayer("right");
+            gun.transform.localScale = new Vector3(1, 1, 1);
+            cameraConfig?.CameraFollowPlayer("right");
         }
-
-        gun.transform.localScale = localScale;
     }
 
-    private void HandlerGunShooting()
+    private void HandleGunShooting()
     {
         if (Input.GetMouseButtonDown(0))
         {
             if (bullet != null && bulletSpawnPoint != null && gun != null)
             {
-                // Verifica se o spawn ainda está ativo
-                if (!bulletSpawnPoint.gameObject.activeInHierarchy)
-                {
-                    Debug.LogWarning("⚠️ bulletSpawnPoint está desativado ou foi destruído!");
-                    return;
-                }
-
-                bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
+                GameObject bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
 
                 Rigidbody2D rb = bulletInst.GetComponent<Rigidbody2D>();
                 if (rb != null)
@@ -85,5 +83,4 @@ public class PlayerAimAndShoot : MonoBehaviour
             }
         }
     }
-
 }
