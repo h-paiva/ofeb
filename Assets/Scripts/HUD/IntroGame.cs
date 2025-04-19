@@ -1,22 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
+// GameManager.cs
 using UnityEngine;
 
-public class IntroGame : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    [SerializeField] public GameObject FatecImage; 
-    [SerializeField] public GameObject StudioImage; 
-    void Start()
+    public static GameManager Instance;
+    public bool gameStarted = false;
+
+    void Awake()
     {
-        Invoke("FatecLogo", 3);
-        Invoke("StudioLogo", 6);
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // persiste entre cenas se necessário
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
-    void FatecLogo()
+
+    public void StartGame()
     {
-        FatecImage.gameObject.SetActive(false);
-    }
-    void StudioLogo()
-    {
-        StudioImage.gameObject.SetActive(false);
+        gameStarted = true;
     }
 }

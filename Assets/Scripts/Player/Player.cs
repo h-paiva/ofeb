@@ -19,6 +19,9 @@ public class Player : MonoBehaviour
     [Header("Status do Jogador")]
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float currentHealth;
+
+    [SerializeField] private float cameraMinX = -50f;
+    [SerializeField] private float cameraMaxX = 50f;
     public ArmControl armControl;
 
     void Awake() {
@@ -79,6 +82,10 @@ public class Player : MonoBehaviour
             anim.SetBool("walk", false);
             anim.SetBool("run", false);
         }
+        
+
+        float clampedX = Mathf.Clamp(transform.position.x, cameraMinX, cameraMaxX);
+        transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
     }
 
     void Jump()

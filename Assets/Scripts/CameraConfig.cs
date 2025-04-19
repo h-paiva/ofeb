@@ -1,67 +1,59 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 
 public class CameraConfig : MonoBehaviour
 {
     [SerializeField] private Transform Player;
-    private string positionPlayer =  "right";
-    private Vector3 targetPosition; // Posição alvo para onde a câmera vai se mover
+    private string positionPlayer = "right";
+    private Vector3 targetPosition;
     private bool starFollow = false;
-    /*
-    [SerializeField] public Transform Player;
-    [SerializeField] public float speed; // Velocidade de movimento da câmera
-    [SerializeField] public int timerIntroMax; // Velocidade de movimento da câmera
-    [SerializeField] private Vector3 targetPosition; // Posição alvo para onde a câmera vai se mover
-    [SerializeField] private Vector3 startPosition; // Posição inicial da câmera
 
-    private  bool initialCamera = false;
-    
-    void Start()
-    {   
-        startPosition = transform.position; // Salva a posição inicial da câmera
-        targetPosition = new Vector3(startPosition.x + 90, startPosition.y, startPosition.z); // Define a posição alvo
-        Invoke("EndIntroduction", timerIntroMax);
-    }
-    private void FixedUpdate() 
+    private float cameraZ; // Valor fixo do Z da câmera
+
+    private void Start()
     {
-        if(initialCamera == false)
+        cameraZ = transform.position.z;
+        if (Player == null)
         {
-            // Move a câmera em direção à posição alvo
-            transform.position = Vector3.Lerp(startPosition, targetPosition, Time.time * speed);
+            Debug.LogError("⚠️ 'Player' não está atribuído no CameraConfig! A câmera não poderá seguir o jogador.");
+            return;
         }
-        if(initialCamera == true)
-        {   
-            //controle da posição do personagem a partir do momento que a camera segue ele
-            targetPosition = new Vector3(Player.position.x + 91, Player.position.y +2, Player.position.z);
-            transform.position = Vector2.Lerp(targetPosition, Player.position, 0.01f);
-        }
+
+        cameraZ = transform.position.z; // Salva o Z atual da câmera
     }
-    void EndIntroduction()
-    {
-        initialCamera = true;
-    }
-    */
+
     public void CameraFollowPlayerActive(bool starFollowPlayer)
     {
         starFollow = starFollowPlayer;
     }
+
     public void CameraFollowPlayer(string position)
     {
-        if(starFollow)
-        {
-            positionPlayer = position;
-            if(positionPlayer  == "right")
-            {
-                targetPosition = new Vector3(Player.position.x + 86, Player.position.y +2, Player.position.z);
-                transform.position = Vector2.Lerp(targetPosition, Player.position, Player.position.z);
-            }
-            else
-            {
-                targetPosition = new Vector3(Player.position.x + 82, Player.position.y +2, Player.position.z);
-                transform.position = Vector2.Lerp(targetPosition, Player.position, Player.position.z);
-            }
-        }
+        if (!starFollow || Player == null) return;
+
+    positionPlayer = position;
+
+    if (positionPlayer == "right")
+    {
+        targetPosition = new Vector3(Player.position.x + 86f, Player.position.y + 2f, cameraZ);
+    }
+    else
+    {
+        targetPosition = new Vector3(Player.position.x + 82f, Player.position.y + 2f, cameraZ);
+    }
+
+    // Limites do cenário
+    float minX = 0f;
+    float maxX = 100f;
+    float minY = -5f;
+    float maxY = 5f;
+
+    targetPosition = new Vector3(
+        Mathf.Clamp(targetPosition.x, minX, maxX),
+        Mathf.Clamp(targetPosition.y, minY, maxY),
+        targetPosition.z
+    );
+
+    // movimento suave
+    transform.position = Vector3.Lerp(transform.position, targetPosition, 0.1f);
     }
 }
