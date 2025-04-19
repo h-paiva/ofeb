@@ -82,6 +82,7 @@ public class Player : MonoBehaviour
             anim.SetBool("walk", false);
             anim.SetBool("run", false);
         }
+        
 
         float clampedX = Mathf.Clamp(transform.position.x, cameraMinX, cameraMaxX);
         transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
