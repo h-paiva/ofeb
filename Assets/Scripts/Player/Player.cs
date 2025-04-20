@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float currentHealth;
     public ArmControl armControl;
+    public float speed = 5f;
+
+    [Header("Referência da Câmera")]
+    public Transform cameraTransform;
 
     void Awake() {
         QualitySettings.vSyncCount = 0;
@@ -42,43 +46,61 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        Vector3 movement = new Vector3(Input.GetAxis( "Horizontal"), 0f , 0f);
-        if(!Input.GetKey(KeyCode.LeftShift))
+        // Variaveis de movimetação do player, -1 para esquerda, 0 parado ou 1 para direita
+        float moveInput = Input.GetAxisRaw("Horizontal");
+        Vector3 movement = new Vector3(moveInput, 0f, 0f);
+
+        // Variaveis para fazer o controle do personagem
+        float positionPlayerNow = transform.position.x;
+        float positionPlayerByCameraMin = cameraTransform.position.x + 9;
+        float positionPlayerByCameraMax = cameraTransform.position.x + 31;
+        // Verifica se o jogador está tentando andar para a esquerda ou direita da camera
+        if ((positionPlayerNow <= positionPlayerByCameraMin && moveInput < 0) || (positionPlayerNow >= positionPlayerByCameraMax && moveInput > 0))
         {
-            anim.SetBool("run", false);
-            transform.position += movement * Time.deltaTime * SpeedWalk;
-        }else{
-            transform.position += movement * Time.deltaTime * SpeedRun;
-        }
-        if(Input.GetAxis( "Horizontal")!= 0f)
-        {
-            if(Input.GetKey(KeyCode.LeftShift))
-            {
-                anim.SetBool("run", true);
-            }
-            else if(!Input.GetKey(KeyCode.LeftShift))
-            {
-                anim.SetBool("walk", true);
-            }
-        }
-        if(Input.GetAxis( "Horizontal") > 0f)
-        {
-            transform.eulerAngles = new Vector3(0f,0f,0f);
-        }else if(Input.GetAxis( "Horizontal") < 0f)
-        {
-            if(Input.GetKey(KeyCode.LeftShift))
-            {
-                anim.SetBool("run", true);
-            }
-            else if(!Input.GetKey(KeyCode.LeftShift))
-            {
-                anim.SetBool("walk", true);
-            }
+            movement.x = 0f;
         }
         else
         {
-            anim.SetBool("walk", false);
-            anim.SetBool("run", false);
+            if (!Input.GetKey(KeyCode.LeftShift))
+            {
+                anim.SetBool("run", false);
+                transform.position += movement * Time.deltaTime * SpeedWalk;
+            }
+            else
+            {
+                transform.position += movement * Time.deltaTime * SpeedRun;
+            }
+            if (Input.GetAxis("Horizontal") != 0f)
+            {
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    anim.SetBool("run", true);
+                }
+                else if (!Input.GetKey(KeyCode.LeftShift))
+                {
+                    anim.SetBool("walk", true);
+                }
+            }
+            if (Input.GetAxis("Horizontal") > 0f)
+            {
+                transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            }
+            else if (Input.GetAxis("Horizontal") < 0f)
+            {
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    anim.SetBool("run", true);
+                }
+                else if (!Input.GetKey(KeyCode.LeftShift))
+                {
+                    anim.SetBool("walk", true);
+                }
+            }
+            else
+            {
+                anim.SetBool("walk", false);
+                anim.SetBool("run", false);
+            }
         }
     }
 
@@ -121,9 +143,6 @@ public class Player : MonoBehaviour
     // Método quando o jogador morre
     private void Die()
     {
-        // Opcional: Tocar animação de morte
-        // anim.SetTrigger("die");
-        
         // Implementar lógica de morte (game over, respawn, etc)
         armShoot.gameObject.SetActive(false);
         anim.SetBool("dead", true);
