@@ -7,7 +7,6 @@ public class Box : MonoBehaviour
     [SerializeField] private float health = 3f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator playerAnimator;
-    private bool isTouchingPlayer = false;
 
     private void Awake()
     {
@@ -43,7 +42,6 @@ public class Box : MonoBehaviour
                     anim.Play("Idle");
                 }
 
-                // Força o Idle do player se ele estiver parado em cima
                 Player player = collision.gameObject.GetComponent<Player>();
                 if (player != null)
                 {
@@ -57,12 +55,10 @@ public class Box : MonoBehaviour
                     }
                 }
 
-                // Impede a caixa de se mover se o player estiver em cima
                 rb.velocity = new Vector2(0f, rb.velocity.y);
                 return;
             }
 
-            // Só empurra a caixa se o player estiver realmente se movendo e estiver do lado
             if (playerDoLado)
             {
                 float moveInput = Input.GetAxis("Horizontal");
@@ -77,7 +73,6 @@ public class Box : MonoBehaviour
                 }
             }
 
-            // Força Idle caso parado (extra segurança)
             Player playerFinal = collision.gameObject.GetComponent<Player>();
             if (playerFinal != null)
             {

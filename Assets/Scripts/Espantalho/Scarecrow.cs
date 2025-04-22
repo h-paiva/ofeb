@@ -56,7 +56,6 @@ public class Scarecrow : MonoBehaviour
 
     private void Die()
     {
-        // Apenas desaparece por enquanto
         gameObject.SetActive(false);
         Debug.Log("Espantalho destruído!");
     }
