@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float cameraMaxX = 50f;
     public ArmControl armControl;
 
+    //Para congelar o player no final do Tutorial - caso encontre outra utilidade pode usar tambem
+    public static bool isFrozen = false;
+
     void Awake() {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
@@ -38,12 +41,16 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (isFrozen) return;
+
         Move();
         Jump();
     }
 
     void Move()
     {
+        if (isFrozen) return;
+        
         Vector3 movement = new Vector3(Input.GetAxis( "Horizontal"), 0f , 0f);
         if(!Input.GetKey(KeyCode.LeftShift))
         {
@@ -83,13 +90,14 @@ public class Player : MonoBehaviour
             anim.SetBool("run", false);
         }
         
-
         float clampedX = Mathf.Clamp(transform.position.x, cameraMinX, cameraMaxX);
         transform.position = new Vector3(clampedX, transform.position.y, transform.position.z);
     }
 
     void Jump()
     {
+        if (isFrozen) return;
+        
         if(Input.GetButtonDown("Jump") && !isJumping)
         {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
@@ -99,17 +107,50 @@ public class Player : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if(collision.gameObject.layer == 7){
-            isJumping = false;
-            anim.SetBool("jump", false);
-            armControl.PlayerIsJumping(false);
+        // Permite pulo quando encosta no chão (Layer 7) ou em caixas com tag "Box"
+        if(collision.gameObject.layer == 7 || collision.gameObject.CompareTag("Box")){
+            // Verifica se a colisão veio de baixo para cima (ou seja, o player está pisando)
+            foreach (ContactPoint2D contact in collision.contacts)
+            {
+                if (contact.normal.y > 0.5f)
+                {
+                    isJumping = false;
+                    anim.SetBool("jump", false);
+                    armControl.PlayerIsJumping(false);
+                    break;
+                }
+            }
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision) {
-        if(collision.gameObject.layer == 7){
-            isJumping = true;
+        // Volta a considerar que o player está pulando ao sair do chão ou da caixa
+        if(collision.gameObject.layer == 7 || collision.gameObject.CompareTag("Box")){
+            // Usa uma verificação segura com delay para checar se ainda está no chão
+            StartCoroutine(VerificarSeAindaEstaNoChao());
         }
+    }
+
+    // Corrotina que aguarda um frame para verificar colisões e garantir se o player saiu realmente do chão
+    private IEnumerator VerificarSeAindaEstaNoChao()
+    {
+        yield return new WaitForFixedUpdate(); // Espera o próximo frame de física
+
+        ContactPoint2D[] contatos = new ContactPoint2D[10];
+        int quantidade = rig.GetContacts(contatos);
+
+        bool estaNoChao = false;
+
+        for (int i = 0; i < quantidade; i++)
+        {
+            if (contatos[i].normal.y > 0.5f)
+            {
+                estaNoChao = true;
+                break;
+            }
+        }
+
+        isJumping = !estaNoChao;
     }
 
     // Método para receber dano

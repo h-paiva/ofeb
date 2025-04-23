@@ -2,27 +2,41 @@ using UnityEngine;
 
 public class CheckpointCircuito : MonoBehaviour
 {
-    private bool ativado = false;
+    [Header("Mensagem do Capitão")]
+    [TextArea]
+    [SerializeField] private string mensagemDoCapitao = 
+        "Vamos testar sua agilidade, destrua todos os espantalhos no menor tempo possível.";
 
-    public string mensagemDoCapitao = "Vamos testar sua agilidade, destruá todos os espantalhos no menor tempo possivel.";
+    [Header("Configurações")]
+    [SerializeField] private float tempoCooldown = 5f;
+
+    private bool mensagemMostrada = false;
+    private bool podeAtivar = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (ativado || !other.CompareTag("Player")) return;
+        if (!other.CompareTag("Player") || !podeAtivar || mensagemMostrada) return;
 
-        ativado = true;
         Debug.Log("Checkpoint do circuito alcançado.");
         TutorialManager.Instance.IniciarContagem();
 
         CapitanDialog capitanDialog = FindObjectOfType<CapitanDialog>();
         if (capitanDialog != null)
         {
-            Debug.Log("CapitanDialog encontrado.");
             capitanDialog.MostrarMensagemTemporaria(mensagemDoCapitao);
         }
         else
         {
             Debug.LogWarning("CapitanDialog NÃO encontrado no CheckpointCircuito.");
         }
+
+        mensagemMostrada = true;
+        podeAtivar = false;
+        Invoke(nameof(ReativarCheckpoint), tempoCooldown);
+    }
+
+    private void ReativarCheckpoint()
+    {
+        podeAtivar = true;
     }
 }

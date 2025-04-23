@@ -2,14 +2,20 @@ using UnityEngine;
 
 public class CheckpointCaixa : MonoBehaviour
 {
-    private bool podeAtivar = true;
-    public float tempoCooldown = 5f;
+    [Header("Mensagem do Capitão")]
+    [TextArea]
+    [SerializeField] private string mensagemDoCapitao = 
+        "Vamos ver como você se sai com as caixas, elas podem ser movidas e você pode quebrá-las com suas balas.";
 
-    public string mensagemDoCapitao = "Use as caixas com sabedoria! São parte do ambiente.";
+    [Header("Configurações")]
+    [SerializeField] private float tempoCooldown = 5f;
+
+    private bool mensagemMostrada = false;
+    private bool podeAtivar = true;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player") || !podeAtivar) return;
+        if (!other.CompareTag("Player") || !podeAtivar || mensagemMostrada) return;
 
         Debug.Log("Checkpoint da caixa alcançado.");
         TutorialManager.Instance.MarcarInteragiuComCaixa();
@@ -17,7 +23,6 @@ public class CheckpointCaixa : MonoBehaviour
         CapitanDialog capitanDialog = FindObjectOfType<CapitanDialog>();
         if (capitanDialog != null)
         {
-            Debug.Log("CapitanDialog encontrado.");
             capitanDialog.MostrarMensagemTemporaria(mensagemDoCapitao);
         }
         else
@@ -25,6 +30,7 @@ public class CheckpointCaixa : MonoBehaviour
             Debug.LogWarning("CapitanDialog NÃO encontrado no CheckpointCaixa.");
         }
 
+        mensagemMostrada = true;
         podeAtivar = false;
         Invoke(nameof(ReativarCheckpoint), tempoCooldown);
     }
