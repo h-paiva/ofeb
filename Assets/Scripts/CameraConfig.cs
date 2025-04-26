@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
@@ -13,6 +14,9 @@ public class CameraConfig : MonoBehaviour
     [Header("Suavização da Camera")]
     public float smoothSpeed = 5f; // Quanto maior, mais rápido a câmera alcança o alvo
 
+    //[Header("Camera")]
+    //public Camera camera; // Quanto maior, mais rápido a câmera alcança o alvo
+
     public enum Fase
     {
         Tutorial,
@@ -22,8 +26,11 @@ public class CameraConfig : MonoBehaviour
     [Header("Fase")]
     public Fase fase;
 
-    [Header("Alvo")]
+    [Header("Player")]
     [SerializeField] public Transform player;
+
+    [Header("Boss Final Fase Position")]
+    [SerializeField] public Transform bossFinalPositionCamera;
 
     [Header("Limites da Câmera no Eixo X")]
     public float minX = -10f;
@@ -32,6 +39,7 @@ public class CameraConfig : MonoBehaviour
     [Header("Offset")]
     public Vector3 offset;
 
+    private bool bossFinalFase2 = false;
     public void CameraFollowPlayerActive(bool starFollowPlayer)
     {
         starFollow = starFollowPlayer;
@@ -55,7 +63,7 @@ public class CameraConfig : MonoBehaviour
     }
     void LateUpdate()
     {
-        if (fase == Fase.Fase2)
+        if (fase == Fase.Fase2 && bossFinalFase2 == false)
         {
             // Posição alvo da câmera
             Vector3 targetPosition = transform.position;
@@ -74,8 +82,27 @@ public class CameraConfig : MonoBehaviour
             targetPosition.z = player.position.z + offset.z;
 
             // Suaviza o movimento
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * (smoothSpeed/2));
+        }
+        else if (fase == Fase.Fase2 && bossFinalFase2 == true)
+        {
+            // Posição alvo da câmera
+            Vector3 targetPosition = transform.position;
+
+            // Mantém os outros eixos com o offset
+            targetPosition.z = player.position.z + offset.z;
+
+            targetPosition.x = Mathf.Clamp(bossFinalPositionCamera.position.x + offset.x , minX, maxX);
+            targetPosition.y = Mathf.Clamp(bossFinalPositionCamera.position.y + offset.y , minX, maxX);
+
+            // Suaviza o movimento
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * smoothSpeed);
+
+            Camera.main.orthographicSize = 10f;
         }
     }
-
+    public void SetBossFinalFase2( bool finalBossActive )
+    {
+        bossFinalFase2 = finalBossActive;
+    }
 }

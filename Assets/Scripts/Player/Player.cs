@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     [Header("Referência da Câmera")]
     public Transform cameraTransform;
 
+    private bool bossFinalFase2 = false;
+
     void Awake() {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
@@ -46,14 +48,20 @@ public class Player : MonoBehaviour
 
     void Move()
     {
+        // Limites ate onde o jogador pode ir usando a camera
+        float fase2Min = 9;
+        float fase2Max = 31;
+        float fase2MinBoss = 3.8f;
+        float fase2MaxBoss = 37;
+
         // Variaveis de movimetação do player, -1 para esquerda, 0 parado ou 1 para direita
         float moveInput = Input.GetAxisRaw("Horizontal");
         Vector3 movement = new Vector3(moveInput, 0f, 0f);
 
         // Variaveis para fazer o controle do personagem
         float positionPlayerNow = transform.position.x;
-        float positionPlayerByCameraMin = cameraTransform.position.x + 9;
-        float positionPlayerByCameraMax = cameraTransform.position.x + 31;
+        float positionPlayerByCameraMin = cameraTransform.position.x + ( bossFinalFase2 ? fase2MinBoss : fase2Min );
+        float positionPlayerByCameraMax = cameraTransform.position.x + ( bossFinalFase2 ? fase2MaxBoss : fase2Max );
         // Verifica se o jogador está tentando andar para a esquerda ou direita da camera
         if ((positionPlayerNow <= positionPlayerByCameraMin && moveInput < 0) || (positionPlayerNow >= positionPlayerByCameraMax && moveInput > 0))
         {
@@ -148,5 +156,10 @@ public class Player : MonoBehaviour
         anim.SetBool("dead", true);
         Destroy(gameObject, 5f);
         restartMenu.gameObject.SetActive(true);
+    }
+    // Método para permitir que o jogador se mova mais quando estiver lutando contra o boss final da fase 2
+    public void SetBossFinalFase2(bool finalBossActive)
+    {
+        bossFinalFase2 = finalBossActive;
     }
 }
