@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; // <- Mudado para UI.Text
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LocalizationManager : MonoBehaviour
@@ -22,12 +22,14 @@ public class LocalizationManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
             Destroy(gameObject);
+            return;
         }
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void Start()
@@ -37,7 +39,10 @@ public class LocalizationManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
+        if (instance == this)
+        {
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -48,7 +53,10 @@ public class LocalizationManager : MonoBehaviour
 
     public void LoadLanguage(int languageIndex)
     {
-        localizedText = new Dictionary<string, string>();
+        if (localizedText == null)
+            localizedText = new Dictionary<string, string>();
+        else
+            localizedText.Clear();
 
         switch (languageIndex)
         {
@@ -105,7 +113,7 @@ public class LocalizationManager : MonoBehaviour
 
     public string GetLocalizedValue(string key)
     {
-        if (localizedText.ContainsKey(key))
+        if (localizedText != null && localizedText.ContainsKey(key))
         {
             return localizedText[key];
         }
@@ -126,5 +134,16 @@ public class LocalizationManager : MonoBehaviour
 
         if (exitText == null)
             exitText = GameObject.Find("ExitText")?.GetComponent<Text>();
+    }
+
+    // >>>> AQUI: Esse método cria um LocalizationManager automático se não existir <<<<
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+    private static void CreateLocalizationManagerIfNotExists()
+    {
+        if (instance == null)
+        {
+            GameObject obj = new GameObject("LocalizationManager");
+            obj.AddComponent<LocalizationManager>();
+        }
     }
 }
