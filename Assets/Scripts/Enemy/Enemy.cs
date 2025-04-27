@@ -18,7 +18,7 @@ public class Enemy : MonoBehaviour
     private bool isDead = false; // Verifica se o inimigo está morto
 
     [Header("FSM Configurações")]
-    private Transform playerTransform;
+    private Transform player;
     public float talkRange = 10f; // Distância para falar
     public float attackRange = 5f; // Distância para atacar
     public float distanceToPlayer; // Torna a distância ao jogador pública
@@ -40,8 +40,6 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>(); 
         currentHealth = maxHealth;
 
-        playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
-
         if (dialogueCanvas != null)
         {
             dialogueCanvas.gameObject.SetActive(false);
@@ -53,7 +51,7 @@ public class Enemy : MonoBehaviour
         if (isDead) return;
 
         // Calcula e atualiza a distância ao jogador
-        distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
+        distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // Lógica da Máquina de Estados Finitos
         switch (currentState)

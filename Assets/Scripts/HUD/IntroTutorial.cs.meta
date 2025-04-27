@@ -3,7 +3,11 @@ guid: c89a7bc7eac08e643beaedc51c5516a6
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - warning: {instanceID: 0}
+  - lifeHUD: {instanceID: 0}
+  - playerObject: {instanceID: 0}
+  - cameraConfig: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

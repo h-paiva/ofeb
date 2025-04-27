@@ -4,11 +4,14 @@ public class BulletBehavior : MonoBehaviour
 {
     [SerializeField] private float normalBulletSpeed;
     [SerializeField] private float bulletLifeTime;
-    [SerializeField] private float distance;
-    [SerializeField] private LayerMask whatCollisionBullet;
-    [SerializeField] private float damage = 10f; // Dano causado pela bala
+    [SerializeField] private float damage = 01f; // Dano da bala
 
     private Rigidbody2D rig;
+
+    private void Awake()
+    {
+        damage = 1f; // Isso sobrescreve qualquer valor do Inspector.
+    }
 
     private void Start() 
     {
@@ -17,46 +20,47 @@ public class BulletBehavior : MonoBehaviour
         SetDestroyBullet();
     }
 
-    void Update()
-    {
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, transform.right, distance, whatCollisionBullet);
-        if(hitInfo.collider != null)
-        {
-            if(hitInfo.collider.CompareTag("Enemy"))
-            {
-                Enemy enemy = hitInfo.collider.GetComponent<Enemy>();
-                if(enemy != null)
-                {
-                    enemy.TakeDamage(10f);
-                }
-                Debug.Log("Acertou o inimigo");
-                Destroy(gameObject);
-            }
-            else if(hitInfo.collider.CompareTag("Player"))
-            {
-                Player player = hitInfo.collider.GetComponent<Player>();
-                if(player != null)
-                {
-                    player.TakeDamage(damage);
-                }
-                Debug.Log("Acertou o jogador");
-                Destroy(gameObject);
-            }
-            else if(hitInfo.collider.CompareTag("Ground"))
-            {
-                Debug.Log("Acertou o chão");
-                Destroy(gameObject);
-            }
-        }
-    }
-
     private void SetStraightVelocity()
     {
         rig.velocity = transform.right * normalBulletSpeed;
     }
 
-    void SetDestroyBullet()
+    private void SetDestroyBullet()
     {
         Destroy(gameObject, bulletLifeTime);
+    }
+
+    public float GetDamage()
+    {
+        return damage;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Colidiu com Espantalho
+        if (collision.CompareTag("Scarecrow"))
+        {
+            Scarecrow scarecrow = collision.GetComponent<Scarecrow>();
+            if (scarecrow != null)
+            {
+                scarecrow.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+        // Colidiu com Caixa
+        else if (collision.CompareTag("Box"))
+        {
+            Box box = collision.GetComponent<Box>();
+            if (box != null)
+            {
+                box.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+        }
+        // Colidiu com chão
+        else if (collision.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 }
