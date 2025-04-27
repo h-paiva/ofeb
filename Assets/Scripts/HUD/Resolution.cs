@@ -7,8 +7,7 @@ public class Resolution : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Screen.SetResolution(1920, 1080, FullScreenMode.Windowed);
-        Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow );
+        Screen.SetResolution(1920, 1080, FullScreenMode.Windowed);
     }
 
 }
