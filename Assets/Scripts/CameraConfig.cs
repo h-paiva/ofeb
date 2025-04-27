@@ -63,6 +63,27 @@ public class CameraConfig : MonoBehaviour
     }
     void LateUpdate()
     {
+        if (fase == Fase.Tutorial)
+        {
+            // Posição alvo da câmera
+            Vector3 targetPosition = transform.position;
+
+            if (positionPlayer == "right")
+            {
+                targetPosition.x = Mathf.Clamp(player.position.x + offset.x + 4, minX, maxX);
+            }
+            else if (positionPlayer == "left")
+            {
+                targetPosition.x = Mathf.Clamp(player.position.x + offset.x - 4, minX, maxX);
+            }
+
+            // Mantém os outros eixos com o offset
+            targetPosition.y = player.position.y + offset.y;
+            targetPosition.z = player.position.z + offset.z;
+
+            // Suaviza o movimento
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * (smoothSpeed / 2));
+        }
         if (fase == Fase.Fase2 && bossFinalFase2 == false)
         {
             // Posição alvo da câmera
