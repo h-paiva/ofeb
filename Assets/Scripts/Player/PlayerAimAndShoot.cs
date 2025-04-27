@@ -1,86 +1,63 @@
+
 using UnityEngine;
 
 public class PlayerAimAndShoot : MonoBehaviour
 {
-    // Variáveis internas
     private Vector2 worldPosition;
     private Vector2 direction;
     private float angle;
+    private GameObject bulletInst;
 
-    // Referências públicas/serializadas
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private SpriteRenderer body;
     public CameraConfig cameraConfig;
 
-    [SerializeField] private float bulletForce = 10f;
-
-    private void Start()
+    private void Start() 
     {
-        // Busca automática de referências se necessário
-        if (cameraConfig == null)
-            cameraConfig = FindObjectOfType<CameraConfig>();
-
-        // Validações
-        if (gun == null || bullet == null || bulletSpawnPoint == null || body == null)
-            Debug.LogWarning("⚠️ Algumas referências não foram atribuídas no Inspector!");
+        cameraConfig = FindObjectOfType<CameraConfig>();
     }
 
-    private void Update()
-    {
-        HandleGunRotation();
-        HandleGunShooting();
+    void Update()
+    {   
+        HandlerGunRotation(); 
+        HandlerGunShooting();
     }
 
-    private void HandleGunRotation()
+    private void HandlerGunRotation()
     {
-        if (gun == null || Camera.main == null || body == null)
-            return;
-
-        // Pega a posição do mouse no mundo
-        worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //rotate the gun towrds the mouse position
+        worldPosition = Camera.main.ScreenToWorldPoint( Input.mousePosition );
         direction = (worldPosition - (Vector2)gun.transform.position).normalized;
+        gun.transform.right = direction;
 
-        // Calcula o ângulo para rotação
+        //flip the gun when itreaches a 90 degree threshold
         angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // Aplica a rotação diretamente no eixo Z
-        gun.transform.rotation = Quaternion.Euler(0, 0, angle);
-
-        // Reflete personagem e braço baseado na direção do mouse
-        if (angle > 90 || angle < -90)
+        Vector3 localScale = new Vector3(1f, 1f, 1f);
+        if(angle > 90 || angle < -90)
         {
+            localScale.y = -1f;
             body.flipX = true;
-            gun.transform.localScale = new Vector3(1, -1, 1); // Inverte o braço
-            cameraConfig?.CameraFollowPlayer("left");
+            cameraConfig.CameraFollowPlayer("left");
         }
         else
         {
+            localScale.y = 1f;
             body.flipX = false;
-            gun.transform.localScale = new Vector3(1, 1, 1);
-            cameraConfig?.CameraFollowPlayer("right");
+            cameraConfig.CameraFollowPlayer("right");
         }
+        gun.transform.localScale = localScale;
+
     }
 
-    private void HandleGunShooting()
+    private void HandlerGunShooting()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0))
         {
-            if (bullet != null && bulletSpawnPoint != null && gun != null)
-            {
-                GameObject bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
-
-                Rigidbody2D rb = bulletInst.GetComponent<Rigidbody2D>();
-                if (rb != null)
-                {
-                    rb.AddForce(gun.transform.right * bulletForce, ForceMode2D.Impulse);
-                }
-            }
-            else
-            {
-                Debug.LogWarning("⚠️ Tentando atirar, mas 'bullet', 'bulletSpawnPoint' ou 'gun' está faltando!");
-            }
+            bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
         }
+
     }
 }

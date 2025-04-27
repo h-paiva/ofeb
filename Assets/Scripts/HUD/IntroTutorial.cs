@@ -5,49 +5,43 @@ using UnityEngine.UI;
 
 public class IntroTutorial : MonoBehaviour
 {
-    [SerializeField] public float speed = 0.2f;
-    [SerializeField] public float timerIntroMax = 5f;
-    [SerializeField] private Vector3 targetPosition;
-    [SerializeField] private GameObject Warning;
-    [SerializeField] private GameObject LifeHUD;
+    [SerializeField] public float speed; // Velocidade de movimento da câmera
+    [SerializeField] public float timerIntroMax; // Velocidade de movimento da câmera
+    [SerializeField] private Vector3 targetPosition; // Posição alvo para onde a câmera vai se mover
+    [SerializeField] private Vector3 startPosition; // Posição inicial da câmera
+    [SerializeField] private GameObject Warning; 
+    [SerializeField] private GameObject LifeHUD; 
 
-    private bool introStart = false;
-    private bool introFinish = false;
 
+    // Start is called before the first frame update
+    private  bool introStart = false;
+    private  bool introFinish = false;
     public CameraConfig cameraConfig;
 
-    private Vector3 startPosition;
-    private float progress = 0f;
-
-    private void Start()
+    private void Start() 
     {
         cameraConfig = FindObjectOfType<CameraConfig>();
-        startPosition = transform.position;
-        targetPosition = new Vector3(startPosition.x + 90, startPosition.y, startPosition.z); // Define a posição alvo da câmera
     }
 
-    private void Update()
+    private void FixedUpdate() 
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        if(Input.GetKey(KeyCode.Space)){
             StartIntroGame();
         }
-
-        if (introStart && !introFinish)
+        if(introStart & !introFinish)
         {
-            progress += Time.deltaTime * speed;
-            transform.position = Vector3.Lerp(startPosition, targetPosition, progress);
+            startPosition = transform.position; // Salva a posição inicial da câmera
+            targetPosition = new Vector3(startPosition.x + 90, startPosition.y, startPosition.z); // Define a posição alvo
+            transform.position = Vector3.Lerp(startPosition, targetPosition, speed);
         }
     }
-
     public void StartIntroGame()
-    {
-        if (introStart) return;
+    {   
+        if (introStart) return; // Evita que o método seja chamado múltiplas vezes
         introStart = true;
-        Destroy(Warning);
+        Destroy(Warning, 0);
         Invoke("EndIntroduction", timerIntroMax);
     }
-
     void EndIntroduction()
     {
         introFinish = true;
