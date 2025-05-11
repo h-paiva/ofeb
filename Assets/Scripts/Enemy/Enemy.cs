@@ -17,18 +17,22 @@ public class Enemy : MonoBehaviour
     private float currentHealth; // Vida atual do inimigo
     private bool isDead = false; // Verifica se o inimigo está morto
 
-    [Header("Diálogo")]
+[Header("FSM Configurações")]
     private Transform playerTransform;
     public float talkRange = 10f; // Distância para falar
     public float distanceToPlayer; // Torna a distância ao jogador pública
 
+    private enum State { Idle, Talk}
+    private State currentState = State.Idle;
+
+    private float dialogueTimer;
+
+    [Header("Diálogo")]
+    
     public Canvas dialogueCanvas; // Canvas para exibir falas
     public Text dialogueText; // Texto dentro do Canvas
     public float dialogueDuration = 10f; // Duração de cada fala
     [TextArea(2, 5)] public List<string> randomPhrases; // Lista de frases aleatórias
-
-    // Adicionado: tempo restante para nova fala
-    private float dialogueTimer;
 
     void Start()
     {
@@ -48,20 +52,44 @@ public class Enemy : MonoBehaviour
     {
         if (isDead) return;
 
-        // Atualiza distância ao jogador
+        // Calcula e atualiza a distância ao jogador
         distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
+        // Lógica da Máquina de Estados Finitos
+        switch (currentState)
+        {
+            case State.Idle:
+                HandleIdleState(distanceToPlayer);
+                break;
+            case State.Talk:
+                HandleTalkState(distanceToPlayer);
+                break;
+        }
+    }
+
+    private void HandleIdleState(float distanceToPlayer)
+    {
         if (distanceToPlayer <= talkRange)
         {
-            dialogueTimer -= Time.deltaTime;
-            if (!dialogueCanvas.gameObject.activeSelf || dialogueTimer <= 0f)
-            {
-                ShowRandomDialogue();
-            }
+            currentState = State.Talk;
+            ShowRandomDialogue();
+        }
+    }
+
+    private void HandleTalkState(float distanceToPlayer)
+    {
+        if (distanceToPlayer > talkRange)
+        {
+            currentState = State.Idle;
+            HideDialogue();
         }
         else
         {
-            HideDialogue();
+            dialogueTimer -= Time.deltaTime;
+            if (dialogueTimer <= 0)
+            {
+                ShowRandomDialogue();
+            }
         }
     }
 

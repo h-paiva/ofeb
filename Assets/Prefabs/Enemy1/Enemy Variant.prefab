@@ -492,6 +492,90 @@ PrefabInstance:
       propertyPath: enemyLifeBar
       value: 
       objectReference: {fileID: 7606408109963999506}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[0]
+      value: A patrulha esta tranquila, nenhum inimigo a vista.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[1]
+      value: Continuem alertas, os Aliados podem estar por perto.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[2]
+      value: Por que sempre escolhemos as rotas mais longas?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[3]
+      value: Espero que a patrulha acabe logo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[4]
+      value: Esta frio aqui fora, vamos terminar rapido.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[5]
+      value: "Parece que eles n\xE3o estao nesta area."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[6]
+      value: Devemos estar atentos, algo nao parece certo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[7]
+      value: Espero que o cafe ainda esteja quente no acampamento.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[8]
+      value: Mais uma volta e voltamos para a base.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[9]
+      value: Este silencio e perturbador.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[10]
+      value: Nao ouco nada ha horas, sera um bom sinal?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[11]
+      value: Fiquem juntos, nao se dispersem!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[12]
+      value: Parece que estamos patrulhando o nada.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[13]
+      value: "Minhas botas est\xE3o me matando!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[14]
+      value: Se encontrarmos algo, espero que nao seja uma bomba.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[15]
+      value: Estamos quase terminando o turno.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[16]
+      value: Espero que o proximo grupo assuma logo.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[17]
+      value: Acho que ouvi algo... Ah, so o vento.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[18]
+      value: Mais um dia, mais uma patrulha.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: randomPhrases.Array.data[19]
+      value: Nada para relatar, capitao.
+      objectReference: {fileID: 0}
     - target: {fileID: 6819347321899589040, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -737.51697
