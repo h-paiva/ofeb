@@ -1036,6 +1036,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -1304,6 +1312,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -2252,6 +2268,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -2753,6 +2777,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -3399,6 +3431,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -3664,6 +3704,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -5099,6 +5147,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -6134,6 +6190,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -7345,6 +7409,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -9497,6 +9569,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -10741,6 +10821,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -12009,6 +12097,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -12455,6 +12551,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -12989,6 +13093,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -13162,6 +13274,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -13631,6 +13751,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -15211,6 +15339,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -15520,6 +15656,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -16522,6 +16666,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -17246,6 +17398,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -17427,6 +17587,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -17992,6 +18160,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -18170,6 +18346,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -18351,6 +18535,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -18735,6 +18927,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -19126,6 +19326,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -19394,6 +19602,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -19921,6 +20137,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -20535,6 +20759,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -20714,6 +20946,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -21684,6 +21924,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -21875,6 +22123,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -22614,6 +22870,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -23114,6 +23378,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -23735,6 +24007,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -24564,6 +24844,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -24960,6 +25248,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -25577,6 +25873,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -25908,6 +26212,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -26081,6 +26393,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -26820,6 +27140,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -27080,6 +27408,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -27677,6 +28013,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -28524,6 +28868,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -28871,6 +29223,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -29566,6 +29926,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -30592,6 +30960,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -31217,6 +31593,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -32220,6 +32604,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -32697,6 +33089,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -33743,6 +34143,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -34780,6 +35188,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -35634,6 +36050,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -36710,6 +37134,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -39340,6 +39772,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -39696,6 +40136,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -45115,6 +45563,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -46099,6 +46555,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -46698,6 +47162,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -47488,6 +47960,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -47669,6 +48149,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -48010,6 +48498,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -48191,6 +48687,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -48797,6 +49301,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -49526,6 +50038,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -49705,6 +50225,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -49889,6 +50417,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -51054,6 +51590,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -51235,6 +51779,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -51497,6 +52049,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -51754,6 +52314,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -52054,6 +52622,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Variant (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
