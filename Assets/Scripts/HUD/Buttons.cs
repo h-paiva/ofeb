@@ -58,10 +58,11 @@ public class Buttons : MonoBehaviour
             optionsPanel.SetActive(false); //Faz o Painel de Ajuste voltar ao Menu Principal
         }
     }
-
-    public void SetVolume(float volume)
+     public void SetVolume(float volume)
     {
         AudioListener.volume = volume;
     }
+
+    
 
 }

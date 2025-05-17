@@ -1,0 +1,19 @@
+Portugues
+
+{ "novo jogo", "Novo Jogo" },
+{ "ajuste", "Ajustes" },
+{ "sair", "Sair" },
+{ "volume", "Volume" },
+{ "idioma", "Idioma" },
+
+Ingles
+
+{ "ajuste", "Settings" },
+{ "volume", "Volume" },
+{ "idioma", "Language" },
+
+Italiano
+
+{ "ajuste", "Impostazioni" },
+{ "volume", "Volume" },
+{ "idioma", "Lingua" },

@@ -1,0 +1,13 @@
+key,pt,en
+start_game,Iniciar Jogo,Start Game
+options,Opções,Options
+exit,Sair,Exit
+resume,Continuar,Resume
+new_game,Novo Jogo,New Game
+pause,Pausado,Paused
+yes,Sim,Yes
+no,Não,No
+tutorial_title,Tutorial,Tutorial
+move_instruction,Use A e D para se mover,Use A and D to move
+jump_instruction,Use Espaço para pular,Use Space to jump
+shoot_instruction,Clique para atirar,Click to shoot
