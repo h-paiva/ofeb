@@ -50,6 +50,7 @@ public class CameraConfig : MonoBehaviour
 
         if (fase == Fase.Fase1 && starFollow)
         {
+            /*
             if (positionPlayer  == "right") 
             {
                 targetPosition = new Vector3(player.position.x + 86, player.position.y +2, player.position.z);
@@ -59,6 +60,25 @@ public class CameraConfig : MonoBehaviour
                 targetPosition = new Vector3(player.position.x + 82, player.position.y +2, player.position.z);
                 transform.position = Vector2.Lerp(targetPosition, player.position, player.position.z);
             }
+            */
+            // Posição alvo da câmera
+            Vector3 targetPosition = transform.position ;
+
+            if (positionPlayer == "right")
+            {
+                targetPosition.x = Mathf.Clamp(player.position.x + 82 + offset.x + 4, minX, maxX);
+            }
+            else if (positionPlayer == "left")
+            {
+                targetPosition.x = Mathf.Clamp(player.position.x + 82 + offset.x - 4, minX, maxX);
+            }
+
+            // Mantém os outros eixos com o offset
+            targetPosition.y = player.position.y + 2 + offset.y;
+            targetPosition.z = player.position.z + offset.z;
+
+            // Suaviza o movimento
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * (smoothSpeed / 2));
         }
     }
     void LateUpdate()

@@ -50,7 +50,7 @@ public class BulletBehavior : MonoBehaviour
         }
     }
 
-    private void SetStraightVelocity()
+    public void SetStraightVelocity()
     {
         rig.velocity = transform.right * normalBulletSpeed;
     }

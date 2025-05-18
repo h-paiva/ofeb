@@ -5324,6 +5324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc33fee8a7e33eb41a122a80a30c4926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  optionsPanel: {fileID: 0}
+  volumeSlider: {fileID: 0}
 --- !u!1 &211116352
 GameObject:
   m_ObjectHideFlags: 0
@@ -53114,12 +53116,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: faseMax
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: faseMin
+      value: -95
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: armShoot
       value: 
       objectReference: {fileID: 1841399297}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: isJumping
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: faseMaxBoss
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: faseMinBoss
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: playerLifeBar

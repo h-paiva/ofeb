@@ -7,6 +7,11 @@ public class Player : MonoBehaviour
     [Header("Controle do Movimento")] 
     [SerializeField] public float SpeedWalk;
     [SerializeField] public float SpeedRun;
+    [Header("Controle do Movimento")]
+    [SerializeField] public float faseMin;
+    [SerializeField] public float faseMax;
+    [SerializeField] public float faseMinBoss;
+    [SerializeField] public float faseMaxBoss;
     [Header("Controle do Pulo")] 
     [SerializeField] public float JumpForce;
     [SerializeField] public bool isJumping = false;
@@ -49,10 +54,10 @@ public class Player : MonoBehaviour
     void Move()
     {
         // Limites ate onde o jogador pode ir usando a camera
-        float fase2Min = 9;
-        float fase2Max = 31;
-        float fase2MinBoss = 3.8f;
-        float fase2MaxBoss = 37;
+        //float fase2Min = 9;
+        //float fase2Max = 31;
+        //float fase2MinBoss = 3.8f;
+        //float fase2MaxBoss = 37;
 
         // Variaveis de movimetação do player, -1 para esquerda, 0 parado ou 1 para direita
         float moveInput = Input.GetAxisRaw("Horizontal");
@@ -60,8 +65,8 @@ public class Player : MonoBehaviour
 
         // Variaveis para fazer o controle do personagem
         float positionPlayerNow = transform.position.x;
-        float positionPlayerByCameraMin = cameraTransform.position.x + ( bossFinalFase2 ? fase2MinBoss : fase2Min );
-        float positionPlayerByCameraMax = cameraTransform.position.x + ( bossFinalFase2 ? fase2MaxBoss : fase2Max );
+        float positionPlayerByCameraMin = cameraTransform.position.x + ( bossFinalFase2 ? faseMinBoss : faseMin );
+        float positionPlayerByCameraMax = cameraTransform.position.x + ( bossFinalFase2 ? faseMaxBoss : faseMax );
         // Verifica se o jogador está tentando andar para a esquerda ou direita da camera
         if ((positionPlayerNow <= positionPlayerByCameraMin && moveInput < 0) || (positionPlayerNow >= positionPlayerByCameraMax && moveInput > 0))
         {
