@@ -13,39 +13,59 @@ public class LanguageManager : MonoBehaviour
     void Start()
     {
         // Traduções
+        //PORTUGUES - PT-BR
         traducoes["PORTUGUES"] = new Dictionary<string, string>
         {
-            { "novo jogo", "Novo Jogo" },
-            { "ajuste", "Ajustes" },
-            { "sair", "Sair" },
-            { "volume", "Volume" },
-            { "idioma", "Idioma" },
+            //LETRAS DO MENU
+            { "novo jogo", "<color=#feae34>Novo Jogo" },
+            { "ajuste", "<color=#feae34>Ajustes" },
+            { "sair", "<color=#feae34>Sair</color>" },
+            //LETRAS DAS OPÇÕES
+            { "volume", "<color=#feae34>VOLUME</color>" },
+            { "idioma", "<color=#feae34>IDIOMA</color>" },
+            { "sairAjuste", "SAIR" },
         };
 
+        //INGLES 
         traducoes["INGLES"] = new Dictionary<string, string>
         {
-            { "novo jogo", "New Game" },
-            { "ajuste", "Settings" },
-            { "sair", "Exit" },
-            { "volume", "Volume" },
-            { "idioma", "Language" },
+            { "novo jogo", "<color=#feae34>New Game</color>" },
+            { "ajuste", "<color=#feae34>Settings</color>" },
+            { "sair", "<color=#feae34>Exit</color>" },
+            { "volume", "<color=#feae34>VOLUME</color>" },
+            { "idioma", "<color=#feae34>Language</color>" },
+            { "sairAjuste", "Exit" },
         };
 
+        /*
+        //ITALIANO
         traducoes["ITALIANO"] = new Dictionary<string, string>
         {
-            { "novo jogo", "Nuovo Gioco" },
-            { "ajuste", "Impostazioni" },
-            { "sair", "Uscita" },
-            { "volume", "Volume" },
-            { "idioma", "Lingua" },
+            { "novo jogo", "<color=#feae34>Nuovo Gioco</color>" },
+            { "ajuste", "<color=#feae34>Impostazioni</color>" },
+            { "sair", "<color=#feae34>Uscita</color>" },
+            { "volume", "<color=#feae34>VOLUME</color>" },
+            { "idioma", "<color=#feae34>Lingua</color>" },
+            { "sairAjuste", "Uscita" },
         };
+        */
 
         // Escuta o dropdown
-        dropdownIdioma.onValueChanged.AddListener(delegate {
+        dropdownIdioma.onValueChanged.AddListener(delegate
+        {
             TrocarIdioma(dropdownIdioma.options[dropdownIdioma.value].text);
         });
 
-        TrocarIdioma(idiomaAtual); // Aplica o idioma padrão
+        // SALVA O ULTIMO IDIOMA QUE O PLAYER DEIXOU
+        if (PlayerPrefs.HasKey("idiomaEscolhido"))
+        {
+            idiomaAtual = PlayerPrefs.GetString("idiomaEscolhido");
+            // Seleciona o valor certo no Dropdown
+            int index = dropdownIdioma.options.FindIndex(option => option.text == idiomaAtual);
+            if (index != -1)
+                dropdownIdioma.value = index;
+        }
+        TrocarIdioma(idiomaAtual);
     }
 
     public void TrocarIdioma(string novoIdioma)
@@ -61,5 +81,8 @@ public class LanguageManager : MonoBehaviour
                 item.text.text = traducoes[idiomaAtual][item.chave];
             }
         }
+
+        PlayerPrefs.SetString("idiomaEscolhido", novoIdioma);
+        PlayerPrefs.Save();
     }
 }
