@@ -19120,8 +19120,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1792513262234976625, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
+      propertyPath: faseMax
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792513262234976625, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
+      propertyPath: faseMin
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792513262234976625, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
       propertyPath: maxHealth
       value: 1000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792513262234976625, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
+      propertyPath: faseMaxBoss
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 1792513262234976625, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
+      propertyPath: faseMinBoss
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 1792513262234976625, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
       propertyPath: playerLifeBar
