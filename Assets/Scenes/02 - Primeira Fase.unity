@@ -53133,7 +53133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: faseMaxBoss
-      value: 100
+      value: 99
       objectReference: {fileID: 0}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: faseMinBoss

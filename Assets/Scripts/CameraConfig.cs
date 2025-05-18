@@ -50,17 +50,6 @@ public class CameraConfig : MonoBehaviour
 
         if (fase == Fase.Fase1 && starFollow)
         {
-            /*
-            if (positionPlayer  == "right") 
-            {
-                targetPosition = new Vector3(player.position.x + 86, player.position.y +2, player.position.z);
-                transform.position = Vector2.Lerp(targetPosition, player.position, player.position.z);
-            } else 
-            {
-                targetPosition = new Vector3(player.position.x + 82, player.position.y +2, player.position.z);
-                transform.position = Vector2.Lerp(targetPosition, player.position, player.position.z);
-            }
-            */
             // Posição alvo da câmera
             Vector3 targetPosition = transform.position ;
 

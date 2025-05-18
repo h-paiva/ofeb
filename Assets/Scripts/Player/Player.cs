@@ -53,11 +53,6 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        // Limites ate onde o jogador pode ir usando a camera
-        //float fase2Min = 9;
-        //float fase2Max = 31;
-        //float fase2MinBoss = 3.8f;
-        //float fase2MaxBoss = 37;
 
         // Variaveis de movimetação do player, -1 para esquerda, 0 parado ou 1 para direita
         float moveInput = Input.GetAxisRaw("Horizontal");
