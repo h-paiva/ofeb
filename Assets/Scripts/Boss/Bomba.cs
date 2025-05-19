@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bomba : MonoBehaviour
 {
-     public float tempoParaDestruir = 0.5f; // Tempo após explosão
+    public float tempoParaDestruir = 0.5f; // Usado apenas se explodir no player
     private Animator animator;
     private bool explodiu = false;
 
@@ -20,24 +20,39 @@ public class Bomba : MonoBehaviour
         if (colisao.gameObject.CompareTag("Player"))
         {
             Debug.Log("Jogador acertado!");
-            Explodir();
+            ExplodirComDelay(); // Permite a animação rodar antes de destruir
         }
         else if (colisao.gameObject.CompareTag("Chao"))
         {
-            Explodir();
+            ExplodirInstantaneo(); // Some imediatamente ao tocar o chão
         }
     }
 
-    void Explodir()
+    void ExplodirComDelay()
     {
         explodiu = true;
-        animator.SetTrigger("Explodir");
 
-        // Desativa a colisão para não explodir várias vezes
+        if (animator != null)
+        {
+            animator.SetTrigger("Explodir");
+        }
+
         GetComponent<Collider2D>().enabled = false;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         GetComponent<Rigidbody2D>().isKinematic = true;
 
-        // Destroi após a animação
         Destroy(gameObject, tempoParaDestruir);
+    }
+
+    void ExplodirInstantaneo()
+    {
+        explodiu = true;
+
+        if (animator != null)
+        {
+            animator.SetTrigger("Explodir");
+        }
+
+        Destroy(gameObject); // Destrói imediatamente (sem delay)
     }
 }

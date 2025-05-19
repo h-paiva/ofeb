@@ -1,20 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Bombardeiro : MonoBehaviour
 {
-    public float velocidade = 3f;
-    public GameObject bombaPrefab;
-    public Transform pontoDeSoltarBomba;
-
+    [Header("Controle do Movimento")] 
     public Transform pontoEsquerdo; // Limite esquerdo
     public Transform pontoDireito; // Limite direito
+    private bool indoParaDireita = true;
+    public float velocidade = 3f;
+    private SpriteRenderer spriteRenderer;
 
+    [Header("Bombas")] 
+    public GameObject bombaPrefab;
+    public Transform pontoDeSoltarBomba;
     public float toleranciaParaSoltar = 0.5f;
     public float tempoEntreBombas = 2f;
-
-    public Transform player; // Jogador
     private float tempoDesdeUltimaBomba;
-    private bool indoParaDireita = true;
+    public Transform player; // Jogador
+
+    [Header("Status")] 
+    [SerializeField] private float maxHealth = 100f; // Vida máxima do inimigo
+    private float currentHealth; // Vida atual do inimigo
+    private bool isDead = false; // Verifica se o inimigo está morto
+    public EnemyLifeBar enemyLifeBar;
+    private Animator anim;
+
+
 
     void Start()
     {
@@ -24,10 +36,14 @@ public class Bombardeiro : MonoBehaviour
         {
             player = jogador.transform;
         }
+        
+        currentHealth = maxHealth;
     }
 
     void Update()
     {
+        if (isDead) return; 
+            
         if (player == null || pontoEsquerdo == null || pontoDireito == null)
             return;
 
@@ -38,6 +54,11 @@ public class Bombardeiro : MonoBehaviour
 
         // Move o bombardeiro horizontalmente
         transform.Translate(Vector2.right * direcao * velocidade * Time.deltaTime);
+
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.flipX = !indoParaDireita;
+        }
 
         // Verifica limites
         if (transform.position.x >= pontoDireito.position.x)
@@ -58,5 +79,51 @@ public class Bombardeiro : MonoBehaviour
     void SoltarBomba()
     {
         Instantiate(bombaPrefab, pontoDeSoltarBomba.position, Quaternion.identity);
+    }
+
+    // Método para receber dano
+    public void TakeDamage(float damage)
+    {
+        enemyLifeBar.DamageLife(damage);
+        if (isDead) return; // Se já estiver morto, não recebe mais dano
+
+        currentHealth -= damage;
+        
+        // Opcional: Tocar animação de dano
+        // anim.SetTrigger("hurt");
+        
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    // Método quando o inimigo morre
+    private void Die()
+    {
+        if (isDead) return; // Evita que o método seja chamado múltiplas vezes
+        
+        isDead = true;
+        
+        // Opcional: Tocar animação de morte
+        // anim.SetTrigger("die");
+
+        // Opcional: Adicionar pontuação ou drops
+        anim.SetBool("death", true);
+
+        // Destruir o inimigo após um delay (opcional)
+        Destroy(gameObject, 5f); // 10 segundos de delay
+    }
+
+    // Método para verificar se está morto (pode ser útil para outros scripts)
+    public bool IsDead()
+    {
+        return isDead;
+    }
+
+    // Método para obter a vida atual (pode ser útil para UI)
+    public float GetCurrentHealth()
+    {
+        return currentHealth;
     }
 }
