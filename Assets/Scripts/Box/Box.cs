@@ -1,95 +1,66 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Box : MonoBehaviour
 {
-    [SerializeField] private float health = 3f;
+    [SerializeField] private float maxHealth = 3f; // Vida total da caixa (3 tiros de 10 de dano)
+    [SerializeField] private SpriteRenderer spriteRenderer; // Referência ao SpriteRenderer da caixa
+    [SerializeField] private Color damageColor = Color.gray; // Cor escurecida por dano
+    [SerializeField] private GameObject breakEffect; // Efeito visual ao quebrar a caixa
     [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Animator playerAnimator;
-    private bool isTouchingPlayer = false;
 
-    private void Awake()
+    private float currentHealth;
+    private Color originalColor;
+
+    private void Start()
     {
+        currentHealth = maxHealth;
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+
+        if (spriteRenderer == null)
+            Debug.LogError("SpriteRenderer não encontrado na caixa.");
         if (rb == null)
-            rb = GetComponent<Rigidbody2D>();
+            Debug.LogError("Rigidbody2D não encontrado na caixa.");
+
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+
+        originalColor = spriteRenderer.color;
     }
 
     public void TakeDamage(float damage)
     {
-        health -= damage;
-        Debug.Log("Caixa recebeu " + damage + " de dano. Vida restante: " + health);
+        Debug.Log("Caixa recebeu dano: " + damage); //Pra saber se está computando a bala
+        currentHealth -= damage;
+        UpdateBoxColor();
 
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
-            Debug.Log("Caixa destruída!");
-            Destroy(gameObject);
+            BreakBox();
         }
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void UpdateBoxColor()
     {
-        if (collision.collider.CompareTag("Player"))
+        // Escurece a cor proporcionalmente ao dano
+        /*float healthPercent = Mathf.Clamp01(currentHealth / maxHealth);
+        spriteRenderer.color = Color.Lerp(damageColor, originalColor, healthPercent);*/
+
+        if (spriteRenderer != null)
         {
-            Vector2 normal = collision.contacts[0].normal;
-            bool playerEmCima = normal.y < -0.5f;
-            bool playerDoLado = Mathf.Abs(normal.x) > 0.5f;
-
-            if (playerEmCima)
-            {
-                Animator anim = collision.collider.GetComponent<Animator>();
-                if (anim != null)
-                {
-                    anim.Play("Idle");
-                }
-
-                // Força o Idle do player se ele estiver parado em cima
-                Player player = collision.gameObject.GetComponent<Player>();
-                if (player != null)
-                {
-                    Rigidbody2D rbPlayer = collision.gameObject.GetComponent<Rigidbody2D>();
-                    if (rbPlayer != null && Mathf.Abs(rbPlayer.velocity.y) < 0.01f && Mathf.Abs(rbPlayer.velocity.x) < 0.1f)
-                    {
-                        Animator animPlayer = player.GetComponent<Animator>();
-                        animPlayer.SetBool("walk", false);
-                        animPlayer.SetBool("run", false);
-                        animPlayer.SetBool("jump", false);
-                    }
-                }
-
-                // Impede a caixa de se mover se o player estiver em cima
-                rb.velocity = new Vector2(0f, rb.velocity.y);
-                return;
-            }
-
-            // Só empurra a caixa se o player estiver realmente se movendo e estiver do lado
-            if (playerDoLado)
-            {
-                float moveInput = Input.GetAxis("Horizontal");
-                if (Mathf.Abs(moveInput) > 0.1f)
-                {
-                    Vector3 newVelocity = new Vector3(moveInput * 2f, rb.velocity.y, 0f);
-                    rb.velocity = new Vector2(newVelocity.x, newVelocity.y);
-                }
-                else
-                {
-                    rb.velocity = new Vector2(0f, rb.velocity.y);
-                }
-            }
-
-            // Força Idle caso parado (extra segurança)
-            Player playerFinal = collision.gameObject.GetComponent<Player>();
-            if (playerFinal != null)
-            {
-                Rigidbody2D rbPlayer = collision.gameObject.GetComponent<Rigidbody2D>();
-                if (rbPlayer != null && Mathf.Abs(rbPlayer.velocity.y) < 0.01f && Mathf.Abs(rbPlayer.velocity.x) < 0.1f)
-                {
-                    Animator anim = playerFinal.GetComponent<Animator>();
-                    anim.SetBool("walk", false);
-                    anim.SetBool("run", false);
-                    anim.SetBool("jump", false);
-                }
-            }
+            float intensity = currentHealth / maxHealth; // de 1 (normal) até 0 (prestes a quebrar)
+            spriteRenderer.color = new Color(intensity, intensity, intensity, 1f); // escurece com base na vida
         }
+    }
+
+    private void BreakBox()
+    {
+        if (breakEffect != null)
+        {
+            Instantiate(breakEffect, transform.position, Quaternion.identity);
+        }
+
+        Debug.Log("Caixa quebrou!");
+        Destroy(gameObject);
     }
 }
