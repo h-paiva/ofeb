@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bomba : MonoBehaviour
 {
     public float tempoParaDestruir = 0.5f; // Usado apenas se explodir no player
+    public float damage = 1f; // Dano configurável da bala no Inspector
     private Animator animator;
     private bool explodiu = false;
 
@@ -19,10 +20,16 @@ public class Bomba : MonoBehaviour
 
         if (colisao.gameObject.CompareTag("Player"))
         {
+            Player player = colisao.collider.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.TakeDamage(damage);
+                }
+            
             Debug.Log("Jogador acertado!");
             ExplodirComDelay(); // Permite a animação rodar antes de destruir
         }
-        else if (colisao.gameObject.CompareTag("Chao"))
+        else if (colisao.gameObject.CompareTag("Ground"))
         {
             ExplodirInstantaneo(); // Some imediatamente ao tocar o chão
         }

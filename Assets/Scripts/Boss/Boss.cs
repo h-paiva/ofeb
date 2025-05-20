@@ -25,10 +25,9 @@ public class Bombardeiro : MonoBehaviour
     public EnemyLifeBar enemyLifeBar;
     private Animator anim;
 
-
-
     void Start()
     {
+        
         anim = GetComponent<Animator>();
 
 
