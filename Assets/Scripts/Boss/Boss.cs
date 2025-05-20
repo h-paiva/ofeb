@@ -9,7 +9,6 @@ public class Bombardeiro : MonoBehaviour
     public Transform pontoDireito; // Limite direito
     private bool indoParaDireita = true;
     public float velocidade = 3f;
-    private SpriteRenderer spriteRenderer;
 
     [Header("Bombas")] 
     public GameObject bombaPrefab;
@@ -21,7 +20,7 @@ public class Bombardeiro : MonoBehaviour
 
     [Header("Status")] 
     [SerializeField] private float maxHealth = 100f; // Vida máxima do inimigo
-    private float currentHealth; // Vida atual do inimigo
+    public float currentHealth; // Vida atual do inimigo
     private bool isDead = false; // Verifica se o inimigo está morto
     public EnemyLifeBar enemyLifeBar;
     private Animator anim;
@@ -30,6 +29,9 @@ public class Bombardeiro : MonoBehaviour
 
     void Start()
     {
+        anim = GetComponent<Animator>();
+
+
         // Busca o jogador pela tag
         GameObject jogador = GameObject.FindGameObjectWithTag("Player");
         if (jogador != null)
@@ -55,16 +57,16 @@ public class Bombardeiro : MonoBehaviour
         // Move o bombardeiro horizontalmente
         transform.Translate(Vector2.right * direcao * velocidade * Time.deltaTime);
 
-        if (spriteRenderer != null)
-        {
-            spriteRenderer.flipX = !indoParaDireita;
-        }
-
         // Verifica limites
         if (transform.position.x >= pontoDireito.position.x)
             indoParaDireita = false;
         else if (transform.position.x <= pontoEsquerdo.position.x)
             indoParaDireita = true;
+
+        // Define o scale para "virar" visualmente
+        Vector3 escala = transform.localScale;
+        escala.x = indoParaDireita ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+        transform.localScale = escala;
 
         // Verifica se está em cima do jogador
         if (Mathf.Abs(transform.position.x - player.position.x) < toleranciaParaSoltar &&
@@ -112,7 +114,7 @@ public class Bombardeiro : MonoBehaviour
         anim.SetBool("death", true);
 
         // Destruir o inimigo após um delay (opcional)
-        Destroy(gameObject, 5f); // 10 segundos de delay
+        Destroy(gameObject, 5f); // 5 segundos de delay
     }
 
     // Método para verificar se está morto (pode ser útil para outros scripts)
