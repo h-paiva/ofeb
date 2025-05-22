@@ -10,7 +10,7 @@ public class BulletBehavior : MonoBehaviour
 
     private Rigidbody2D rig;
 
-    private void Start() 
+    private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         SetStraightVelocity(); // Define a velocidade inicial da bala
@@ -54,30 +54,31 @@ public class BulletBehavior : MonoBehaviour
                 Destroy(gameObject);
             }
 
-            // Acertou chão
-            else if (hitInfo.collider.CompareTag("Ground"))
-            {
-                Debug.Log("Acertou o chão");
-                Destroy(gameObject);
-            }
-
             // Acertou caixa
             else if (hitInfo.collider.CompareTag("Box"))
             {
                 Box box = hitInfo.collider.GetComponent<Box>();
-                if (box != null)
-                {
-                    box.TakeDamage(damage);
-                    Debug.Log("Script Box encontrado, aplicando dano..."); //detectar se o script está funcionando com a caixa
 
-                }
-                //detectar se o script não está funcionando com a caixa
-                else
-                {
-                    Debug.LogWarning("Objeto com tag 'Box' não tem o script Box.cs.");
-                }
+                hitInfo.collider.GetComponent<Box>()?.TakeDamage(damage);
+                Destroy(gameObject);
+            }
 
-                Debug.Log("A bala detectou colisão com objeto: " + hitInfo.collider.name);
+            // Acertou inimigo
+            if (hitInfo.collider.CompareTag("Scarecrow"))
+            {
+                Destroy(gameObject);
+                Scarecrow scarecrow = hitInfo.collider.GetComponent<Scarecrow>();
+                if (scarecrow != null)
+                {
+                    scarecrow.TakeDamage(damage); // CORREÇÃO: usar o valor configurado no Inspector
+                }
+                Debug.Log("Acertou o espantalho");
+            }
+
+            // Acertou chão
+            else if (hitInfo.collider.CompareTag("Ground"))
+            {
+                Debug.Log("Acertou o chão");
                 Destroy(gameObject);
             }
         }
@@ -97,4 +98,6 @@ public class BulletBehavior : MonoBehaviour
     {
         Destroy(gameObject, bulletLifeTime);
     }
+
+
 }

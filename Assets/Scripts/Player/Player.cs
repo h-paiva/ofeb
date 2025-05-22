@@ -32,6 +32,9 @@ public class Player : MonoBehaviour
     public Transform cameraTransform;
 
     private bool bossFinalFase2 = false;
+    //Para congelar o player no final do Tutorial - caso encontre outra utilidade pode usar tambem
+    public static bool isFrozen = false;
+
 
     void Awake() {
         QualitySettings.vSyncCount = 0;
@@ -47,12 +50,14 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (isFrozen) return;
         Move();
         Jump();
     }
 
     void Move()
     {
+        if (isFrozen) return;
 
         // Variaveis de movimetação do player, -1 para esquerda, 0 parado ou 1 para direita
         float moveInput = Input.GetAxisRaw("Horizontal");
@@ -114,7 +119,9 @@ public class Player : MonoBehaviour
 
     void Jump()
     {
-        if(Input.GetButtonDown("Jump") && !isJumping)
+        if (isFrozen) return;
+        
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
             anim.SetBool("jump", true);

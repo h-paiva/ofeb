@@ -13,8 +13,10 @@ public class PlayerAimAndShoot : MonoBehaviour
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private SpriteRenderer body;
     public CameraConfig cameraConfig;
+    
+    [SerializeField] private float bulletForce = 10f;
 
-    private void Start() 
+    private void Start()
     {
         cameraConfig = FindObjectOfType<CameraConfig>();
     }
@@ -54,9 +56,15 @@ public class PlayerAimAndShoot : MonoBehaviour
 
     private void HandlerGunShooting()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
+
+            Rigidbody2D rb = bulletInst.GetComponent<Rigidbody2D>();
+            if (rb != null)
+            {
+                rb.AddForce(gun.transform.right * bulletForce, ForceMode2D.Impulse);
+            }
         }
 
     }
