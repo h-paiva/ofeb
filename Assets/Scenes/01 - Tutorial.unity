@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 3303837}
   - component: {fileID: 3303836}
   m_Layer: 0
-  m_Name: CanvasText
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -704,7 +704,7 @@ GameObject:
   - component: {fileID: 100257568}
   - component: {fileID: 100257567}
   m_Layer: 0
-  m_Name: DialogTutorial
+  m_Name: DialogTut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1791,13 +1791,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210686681}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1265789548}
-  m_Father: {fileID: 1284542949}
+  m_Father: {fileID: 1856009286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &236076747 stripped
 Transform:
@@ -8705,10 +8705,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 446049767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa24c16c47c8d724bb997ea6b4ac9f36, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d937baa4b202dc4da3c27b9fdb5580c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 0
+  mensagemFinal: "Parabens ''Axpira'', nao foi tao ruim quanto pensei, mas ainda
+    precisamos vencer as nossas miss\xF5es. Vamos que irei te orientar sobre elas."
 --- !u!1 &458422266
 GameObject:
   m_ObjectHideFlags: 0
@@ -9938,10 +9939,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 542909530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa24c16c47c8d724bb997ea6b4ac9f36, type: 3}
+  m_Script: {fileID: 11500000, guid: 40291c60bca51d547bec337b4e76a2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 1
+  mensagemDoCapitao: "Este \xE9 o seu inimigo. N\xE3o tenha medo dele, pois ele n\xE3o
+    ter\xE1 de voc\xEA. Bot\xE3o esquerdo para atirar e mova o mouse para apontar."
+  tempoCooldown: 5
 --- !u!1001 &569867943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12118,6 +12121,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1353634042175300526, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1836357558037900458, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2098796595437993957, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: gun
       value: 
@@ -12194,6 +12209,10 @@ PrefabInstance:
       propertyPath: cameraConfig
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7247354142777185041, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7498298820311687416, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: m_Material
       value: 
@@ -12212,6 +12231,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8245045685175797955, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064048929715790409, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13377,13 +13400,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943660080}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.13, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.1300049, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 446049768}
-  m_Father: {fileID: 1284542949}
+  m_Father: {fileID: 1856009286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &952694733 stripped
 Transform:
@@ -16524,7 +16547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265789547}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -879.51, y: -517.38, z: 1.661319}
   m_LocalScale: {x: 0.5829688, y: 2.4875, z: 1}
   m_ConstrainProportionsScale: 0
@@ -16637,10 +16660,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1265789547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa24c16c47c8d724bb997ea6b4ac9f36, type: 3}
+  m_Script: {fileID: 11500000, guid: 72c5dfe37616f5d4dbf6537964b0258a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 0
+  mensagemDoCapitao: "Vamos ver como voc\xEA se sai com as caixas, elas podem ser
+    movidas e voc\xEA pode quebr\xE1-las com suas balas."
+  tempoCooldown: 5
 --- !u!1 &1266206415
 GameObject:
   m_ObjectHideFlags: 0
@@ -16689,16 +16714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44c6dd0efdbcda40b025d5e4102e52e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueTut:
-  - "Movimentacao: A para esquerda; D para direita; Shift para Correr; Espa\xE7o
-    para pular"
-  - "Vamos ver como voce se sai com as caixas, elas podem ser movidas e voc\xEA pode
-    quebr\xE1-las com suas balas."
-  - "Este \xE9 o seu inimigo. N\xE3o tenha medo dele, pois ele n\xE3o ter\xE1 de
-    voc\xEA. Bot\xE3o esquerdo para atirar e mova o mouse para apontar."
-  - "Vamos testar sua agilidade, destrua todos os espantalhos no menor tempo poss\xEDvel."
-  - "Parab\xE9ns 'Axpira', n\xE3o foi t\xE3o ruim quanto pensei, mas ainda precisamos
-    vencer as nossas miss\xF5es. Vamos que irei te orientar sobre elas."
+  dialogueTut: []
   dialogueIndex: 0
   mensagesPanel: {fileID: 2108482382}
   dialogueText: {fileID: 100257567}
@@ -16951,70 +16967,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1274906842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa24c16c47c8d724bb997ea6b4ac9f36, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b475f8c0246dd94e8e1df7f1bd40715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tipo: 2
---- !u!1 &1284542948
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1284542949}
-  - component: {fileID: 1284542950}
-  m_Layer: 0
-  m_Name: CheckPointManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1284542949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284542948}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 210686682}
-  - {fileID: 1642168573}
-  - {fileID: 2081076300}
-  - {fileID: 943660081}
-  m_Father: {fileID: 1856009286}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1284542950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1284542948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9955a729a762e7e43a7aa6d38ba34587, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  checkpointBox: {fileID: 1265789547}
-  checkpointScarecrow: {fileID: 542909530}
-  checkpointStartCircuito: {fileID: 1274906842}
-  checkpointFinishCircuito: {fileID: 446049767}
-  mensagemBox: "Vamos ver como voc\xEA se sai com as caixas, elas podem ser movidas
-    e voc\xEA pode quebr\xE1-las com suas balas."
-  mensagemScarecrow: "Este \xE9 o seu inimigo. N\xE3o tenha medo dele, pois ele n\xE3o
-    ter\xE1 de voc\xEA. Bot\xE3o esquerdo para atirar e mova o mouse para apontar."
-  mensagemCircuito: "Vamos testar sua agilidade, destrua todos os espantalhos no
+  mensagemDoCapitao: "Vamos testar sua agilidade, destrua todos os espantalhos no
     menor tempo poss\xEDvel."
-  mensagemFinal: "Parabens ''Axpira'', nao foi tao ruim quanto pensei, mas ainda
-    precisamos vencer as nossas miss\xF5es. Vamos que irei te orientar sobre elas."
   tempoCooldown: 5
 --- !u!1001 &1288016274
 PrefabInstance:
@@ -19825,13 +19782,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642168572}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 542909531}
-  m_Father: {fileID: 1284542949}
+  m_Father: {fileID: 1856009286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647710977
 GameObject:
@@ -20071,7 +20028,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Capitao PAiva:'
+  m_Text: 'Capitao Paiva:'
 --- !u!222 &1665809908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21879,6 +21836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1856009286}
+  - component: {fileID: 1856009287}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -21899,10 +21857,31 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1284542949}
   - {fileID: 1143687805}
+  - {fileID: 210686682}
+  - {fileID: 1642168573}
+  - {fileID: 2081076300}
+  - {fileID: 943660081}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856009287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856009285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bcff3b584bc5b543a09f921150ddb05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  espantalhoDestruido: 0
+  interagiuComCaixa: 0
+  circuitoConcluido: 0
+  tempoCircuito: 0
+  caixasUsadas: 0
+  balasDisparadas: 0
 --- !u!1001 &1862658761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23512,13 +23491,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081076299}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1274906843}
-  m_Father: {fileID: 1284542949}
+  m_Father: {fileID: 1856009286}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2095187131 stripped
 Transform:
