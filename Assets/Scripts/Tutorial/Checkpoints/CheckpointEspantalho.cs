@@ -5,7 +5,7 @@ public class CheckpointScarecrow : MonoBehaviour
     [Header("Mensagem do Capitão")]
     [TextArea]
     [SerializeField] private string mensagemDoCapitao = 
-        "Este é o seu inimigo. Não tenha medo dele, pois ele não terá de você. Botão esquerdo para atirar e mova o mouse para apontar.";
+        "Este e o seu inimigo. Nao tenha medo dele, pois ele não tera de você. Botao esquerdo para atirar e mova o mouse para apontar.";
 
     [Header("Configurações")]
     [SerializeField] private float tempoCooldown = 5f;
@@ -24,10 +24,6 @@ public class CheckpointScarecrow : MonoBehaviour
         if (capitanDialog != null)
         {
             capitanDialog.MostrarMensagemTemporaria(mensagemDoCapitao);
-        }
-        else
-        {
-            Debug.LogWarning("CapitanDialog NÃO encontrado no CheckpointScarecrow.");
         }
 
         mensagemMostrada = true;

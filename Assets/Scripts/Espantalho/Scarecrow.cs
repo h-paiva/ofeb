@@ -58,7 +58,8 @@ public class Scarecrow : MonoBehaviour
     {
         // Apenas desaparece por enquanto
         gameObject.SetActive(false);
-        Debug.Log("Espantalho destruído!");
+        print("Espantalho destruído!");
+        TutorialManager.Instance?.RegistrarEspantalhoCircuito();
     }
 
     private void OnDrawGizmosSelected()

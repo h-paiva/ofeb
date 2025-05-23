@@ -25,8 +25,6 @@ public class CapitanDialog : MonoBehaviour
 
     IEnumerator StartDialogueAutomaticamente()
     {
-        Debug.Log("Iniciando diálogo automático...");
-
         if (mensagesPanel != null && nameCapitan != null && imageCapitan != null && dialogueText != null)
         {
             mensagesPanel.SetActive(true);
@@ -83,10 +81,6 @@ public class CapitanDialog : MonoBehaviour
 
             mensagesPanel.SetActive(false);
             mensagemCorrente = null;
-        }
-        else
-        {
-            Debug.LogWarning("CapitanDialog: Referências não atribuídas corretamente ao exibir mensagem.");
         }
     }
 }

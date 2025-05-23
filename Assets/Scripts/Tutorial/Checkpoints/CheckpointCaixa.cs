@@ -5,7 +5,7 @@ public class CheckpointCaixa : MonoBehaviour
     [Header("Mensagem do Capitão")]
     [TextArea]
     [SerializeField] private string mensagemDoCapitao = 
-        "Vamos ver como você se sai com as caixas, elas podem ser movidas e você pode quebrá-las com suas balas.";
+        "Vamos ver como você se sai com as caixas, elas podem ser movidas e você pode quebra-las com suas balas.";
 
     [Header("Configurações")]
     [SerializeField] private float tempoCooldown = 5f;

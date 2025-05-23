@@ -13,6 +13,7 @@ public class TutorialManager : MonoBehaviour
     public float tempoCircuito = 0f;
     public int caixasUsadas = 0;
     public int balasDisparadas = 0;
+    public int espantalhosDestruidos = 0;
 
     private bool contandoTempo = false;
 
@@ -48,7 +49,7 @@ public class TutorialManager : MonoBehaviour
         caixasUsadas = 0;
         contandoTempo = true;
 
-        Debug.Log("Contagem de tempo do circuito iniciada!");
+        print("Contagem do circuito iniciada!");
     }
 
     public void PararContagem()
@@ -58,10 +59,10 @@ public class TutorialManager : MonoBehaviour
         contandoTempo = false;
         circuitoConcluido = true;
 
-        Debug.Log($"Circuito concluído!");
-        Debug.Log($"Tempo: {tempoCircuito:F2} segundos");
-        Debug.Log($"Balas disparadas: {balasDisparadas}");
-        Debug.Log($"Caixas usadas: {caixasUsadas}");
+        print($"Circuito concluído!");
+        print($"Tempo: {tempoCircuito:F2} segundos");
+        print($"Balas disparadas: {balasDisparadas}");
+        print($"Caixas usadas: {caixasUsadas}");
     }
 
     public void RegistrarBala()
@@ -79,6 +80,15 @@ public class TutorialManager : MonoBehaviour
             caixasUsadas++;
         }
     }
+
+    public void RegistrarEspantalhoCircuito()
+    {
+        if (contandoTempo)
+        {
+            espantalhosDestruidos++;
+        }
+    }
+
 
     public void MarcarEspantalhoDestruido()
     {
