@@ -17,8 +17,8 @@ public class LanguageManager : MonoBehaviour
         traducoes["PORTUGUES"] = new Dictionary<string, string>
         {
             //LETRAS DO MENU
-            { "novo jogo", "<color=#feae34>Novo Jogo" },
-            { "ajuste", "<color=#feae34>Ajustes" },
+            { "novo jogo", "<color=#feae34>Novo Jogo</color>" },
+            { "ajuste", "<color=#feae34>Ajustes</color>" },
             { "sair", "<color=#feae34>Sair</color>" },
             //LETRAS DAS OPÇÕES
             { "volume", "<color=#feae34>VOLUME</color>" },

@@ -2,16 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Manipular as cenas
-using UnityEngine.UI; //Manipular a UI / aqui foi o volume
+using UnityEngine.UI; //Manipular a UI do volume
 
 public class Buttons : MonoBehaviour
 {
-    [Header("Painel de Opções")]
-    public GameObject optionsPanel; // Referência ao painel de opções
+    //Fases Jogaveis
+
+    [Header("Painel de Pausa da Fase")]
+    public GameObject PauseMenuPanel; // Referencia ao painel de Menu de Pausa
+
+    public GameObject SettingsMenu; // Referencia ao painel de opções das Fases Jogaveis
+    
+    //Tutorial
+    [Header("Painel de Opções do Menu")]
+    public GameObject optionsPanel; // Referencia ao painel de opções do Menu
+
+    
 
     [Header("Controle de Volume")]
-    public Slider volumeSlider; // Referência ao slider do volume
+    public Slider volumeSlider; // Referencia ao slider do volume
 
+    
     void Start()
     {
         //Tentando configurar o volume do game
@@ -24,24 +35,25 @@ public class Buttons : MonoBehaviour
     }
 
 
-    public void QuitGameButton()
+    // BOTOES DO TUTORIAL
+    public void QuitGameButton() //Fechar o Game
     {
         Application.Quit();
     }
 
-    public void ReturnToMainMenuButton()
+    public void ReturnToMainMenuButton() //Menu
     {
-        Debug.Log("Reiniciando o Jogo");
+        print("Reiniciando o Jogo");
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
-    public void NewGameMenuButton()
+    public void NewGameMenuButton() //Menu
     {
-        Debug.Log("Novo Jogo iniciado!");
+        print("Novo Jogo iniciado!");
         SceneManager.LoadScene("01 - Tutorial", LoadSceneMode.Single); // Cena de tutorial
     }
 
-    public void OptionsButton()
+    public void OptionsButton() //Menu
     {
         Debug.Log("Abrindo Ajustes...");
         if (optionsPanel != null)
@@ -50,7 +62,7 @@ public class Buttons : MonoBehaviour
         }
     }
 
-    public void CloseOptionsButton()
+    public void CloseOptionsButton() //Menu
     {
         Debug.Log("Fechando Ajustes...");
         if (optionsPanel != null)
@@ -58,11 +70,36 @@ public class Buttons : MonoBehaviour
             optionsPanel.SetActive(false); //Faz o Painel de Ajuste voltar ao Menu Principal
         }
     }
-     public void SetVolume(float volume)
+
+    //VOLUME DO GAME
+    public void SetVolume(float volume)
     {
         AudioListener.volume = volume;
     }
 
-    
+    //FASES JOGAVEIS
+    public void BackGaming() //FasesJogaveis //Voltar ao jogo
+    {
+        SettingsMenu.SetActive(false);
+        PauseMenuPanel.SetActive(false);
+    }
+
+    public void OpenSettings() //FasesJogaveis // Abrir os Ajustes
+    {
+        SettingsMenu.SetActive(true);
+        PauseMenuPanel.SetActive(true);
+    }
+
+    public void CloseSettings() //FasesJogaveis //Fechar os Ajustes
+    {
+        SettingsMenu.SetActive(false);
+        PauseMenuPanel.SetActive(true);
+    }
+
+    public void BackMainMenu()
+    {
+        print("Voltando ao Menu!");
+        SceneManager.LoadScene("00 - Menu Inicial"); // Cena de tutorial
+    }
 
 }
