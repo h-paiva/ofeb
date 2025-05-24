@@ -34,6 +34,25 @@ public class Buttons : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // Se o painel já estiver ativo, fecha. Caso contrário, abre.
+            if (PauseMenuPanel != null)
+            {
+                bool isActive = PauseMenuPanel.activeSelf;
+                PauseMenuPanel.SetActive(!isActive);
+
+                // Se estiver ativando o painel de pausa, garantir que o painel de ajustes esteja fechado
+                if (!isActive && SettingsMenu != null)
+                {
+                    SettingsMenu.SetActive(false);
+                }
+            }
+        }
+    }
+
 
     // BOTOES DO TUTORIAL
     public void QuitGameButton() //Fechar o Game
