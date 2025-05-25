@@ -36,23 +36,8 @@ public class Buttons : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            // Se o painel já estiver ativo, fecha. Caso contrário, abre.
-            if (PauseMenuPanel != null)
-            {
-                bool isActive = PauseMenuPanel.activeSelf;
-                PauseMenuPanel.SetActive(!isActive);
-
-                // Se estiver ativando o painel de pausa, garantir que o painel de ajustes esteja fechado
-                if (!isActive && SettingsMenu != null)
-                {
-                    SettingsMenu.SetActive(false);
-                }
-            }
-        }
+       
     }
-
 
     // BOTOES DO TUTORIAL
     public void QuitGameButton() //Fechar o Game
@@ -97,10 +82,36 @@ public class Buttons : MonoBehaviour
     }
 
     //FASES JOGAVEIS
+
+    public void Pause()//Abrindo o Menu
+    {
+        Player.isFrozen = true;
+        PauseMenuPanel.SetActive(true);
+        Time.timeScale = 0;
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", false);
+            anim.SetBool("jump", false);
+            anim.SetBool("idle", true);
+        }
+    }
+
     public void BackGaming() //FasesJogaveis //Voltar ao jogo
     {
+        Player.isFrozen = false;
         SettingsMenu.SetActive(false);
         PauseMenuPanel.SetActive(false);
+        Time.timeScale = 1;
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+        {
+            anim.SetBool("walk", true);
+            anim.SetBool("run", true);
+            anim.SetBool("jump", true);
+            anim.SetBool("idle", true);
+        }
     }
 
     public void OpenSettings() //FasesJogaveis // Abrir os Ajustes

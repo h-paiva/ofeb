@@ -8,7 +8,7 @@ public class CheckpointCircuito : MonoBehaviour
     [TextArea]
     [SerializeField]
     private string mensagemDoCapitao =
-        "Vamos testar sua agilidade, destrua todos os espantalhos no menor tempo possível.";
+        "Vamos testar sua agilidade, destrua todos os espantalhos no menor tempo possivel.";
 
     [Header("Configurações")]
     [SerializeField] private float tempoCooldown = 5f;
@@ -18,6 +18,7 @@ public class CheckpointCircuito : MonoBehaviour
 
     [Header("Referências do Player")]
     [SerializeField] private GameObject player;
+    [SerializeField] private GameObject playerAimAndShoot;
     private MonoBehaviour scriptMovimento;
 
     [Header("Relógio")]
@@ -51,6 +52,18 @@ public class CheckpointCircuito : MonoBehaviour
         else
         {
             Debug.LogWarning("CapitanDialog NÃO encontrado no CheckpointCircuito.");
+        }
+
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+        {
+            anim.SetBool("walk", false);
+            anim.SetBool("run", false);
+            anim.SetBool("jump", false);
+            anim.SetBool("Shot_Arm_Idle", false);
+            anim.SetBool("PlayerArm", false);
+            anim.SetBool("PlayerArmShooting", false);
+            anim.SetBool("idle", true);
         }
 
         mensagemMostrada = true;

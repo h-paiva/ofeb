@@ -5,7 +5,7 @@ public class CheckpointScarecrow : MonoBehaviour
     [Header("Mensagem do Capitão")]
     [TextArea]
     [SerializeField] private string mensagemDoCapitao = 
-        "Este e o seu inimigo. Nao tenha medo dele, pois ele não tera de você. Botao esquerdo para atirar e mova o mouse para apontar.";
+        "Este e o seu inimigo. Nao tenha medo dele, pois ele nao tera de voce. Botao esquerdo para atirar e mova o mouse para apontar.";
 
     [Header("Configurações")]
     [SerializeField] private float tempoCooldown = 5f;

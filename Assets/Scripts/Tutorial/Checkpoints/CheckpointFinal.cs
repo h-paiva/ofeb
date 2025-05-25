@@ -19,6 +19,7 @@ public class CheckpointFinal : MonoBehaviour
             jaFinalizou = true;
 
             Player.isFrozen = true;
+            PlayerAimAndShoot.isFrozen = true;
 
             Animator anim = collision.GetComponent<Animator>();
             if (anim != null)
@@ -26,6 +27,7 @@ public class CheckpointFinal : MonoBehaviour
                 anim.SetBool("walk", false);
                 anim.SetBool("run", false);
                 anim.SetBool("jump", false);
+                anim.SetBool("idle", true);
             }
 
             Invoke("CarregarProximaCena", 3f);

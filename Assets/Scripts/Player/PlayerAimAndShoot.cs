@@ -7,12 +7,14 @@ public class PlayerAimAndShoot : MonoBehaviour
     private Vector2 direction;
     private float angle;
     private GameObject bulletInst;
+    public CameraConfig cameraConfig;
+    public static bool isFrozen = false;
 
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private SpriteRenderer body;
-    public CameraConfig cameraConfig;
+    
     
     [SerializeField] private float bulletForce = 10f;
 
@@ -22,13 +24,15 @@ public class PlayerAimAndShoot : MonoBehaviour
     }
 
     void Update()
-    {   
+    { 
+        if (PlayerAimAndShoot.isFrozen) return;  
         HandlerGunRotation(); 
         HandlerGunShooting();
     }
 
     private void HandlerGunRotation()
     {
+        if (PlayerAimAndShoot.isFrozen) return; 
         //rotate the gun towrds the mouse position
         worldPosition = Camera.main.ScreenToWorldPoint( Input.mousePosition );
         direction = (worldPosition - (Vector2)gun.transform.position).normalized;
@@ -56,6 +60,7 @@ public class PlayerAimAndShoot : MonoBehaviour
 
     private void HandlerGunShooting()
     {
+        if (PlayerAimAndShoot.isFrozen) return; 
         if (Input.GetMouseButtonDown(0))
         {
             bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
