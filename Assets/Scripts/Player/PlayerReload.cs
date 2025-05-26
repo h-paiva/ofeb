@@ -39,7 +39,7 @@ public class PlayerReload : MonoBehaviour
 
     }
 
-    void UpdateBulletsUI(int bullets)
+    public void UpdateBulletsUI(int bullets)
     {
         bulletsText.text = bullets.ToString();
     }

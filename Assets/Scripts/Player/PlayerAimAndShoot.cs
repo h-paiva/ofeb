@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 
 public class PlayerAimAndShoot : MonoBehaviour
@@ -21,6 +22,7 @@ public class PlayerAimAndShoot : MonoBehaviour
     private int bullets;
     private float reloadTime;
     public float fireRate;
+    public bool reloading;
 
 
     [SerializeField] private float bulletForce = 10f;
@@ -37,6 +39,7 @@ public class PlayerAimAndShoot : MonoBehaviour
         if (isFrozen) return;
         HandlerGunRotation();
         HandlerGunShooting();
+        UpdateBulletsUI();
     }
 
     private void HandlerGunRotation()
@@ -70,7 +73,7 @@ public class PlayerAimAndShoot : MonoBehaviour
     private void HandlerGunShooting()
     {
         if (isFrozen) return;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && bullets > 0)
         {
             bulletInst = Instantiate(bullet, bulletSpawnPoint.position, gun.transform.rotation);
 
@@ -81,6 +84,15 @@ public class PlayerAimAndShoot : MonoBehaviour
             }
 
             bullets--;
+            UpdateBulletsUI();
+        }
+        if (Input.GetKeyDown(KeyCode.R) && !reloading && bullets < playerReload.bullets)
+        {
+            StartCoroutine(Reloading());
+        }
+        else if (Input.GetMouseButtonDown(0) && bullets <= 0 && !reloading)
+        {
+            StartCoroutine(Reloading());
         }
 
     }
@@ -92,8 +104,19 @@ public class PlayerAimAndShoot : MonoBehaviour
         reloadTime = playerReload.reloadTime;
     }
 
-    void UpdateBulletsUI()
+    public void UpdateBulletsUI()
     {
-        
+        FindObjectOfType<PlayerReload>().UpdateBulletsUI(bullets);
+    }
+
+    IEnumerator Reloading()
+    {
+        reloading = true;
+        //anim.SetBool("Reloading", true); // Caso ponha uma Animação de reloading
+        yield return new WaitForSeconds(reloadTime);
+        bullets = playerReload.bullets;
+        reloading = false;
+        //anim.SetBool("Reloading", false); // Caso ponha uma Animação de reloading
+        UpdateBulletsUI();
     }
 }
