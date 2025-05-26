@@ -35,6 +35,13 @@ public class Player : MonoBehaviour
     //Para congelar o player no final do Tutorial - caso encontre outra utilidade pode usar tambem
     public static bool isFrozen = false;
 
+    public enum GroundType
+    {
+        softGround,
+        hardGround,
+        none
+    }
+
 
     void Awake() {
         QualitySettings.vSyncCount = 0;

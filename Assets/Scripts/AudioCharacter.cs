@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioCharacter : MonoBehaviour
 {
     [SerializeField] AudioSource footstepsAudioSource = null;
+    
     [Header("Audio clips")]
     [SerializeField] AudioSource softGround = null;
     [SerializeField] AudioSource hardGround = null;
@@ -14,16 +15,16 @@ public class AudioCharacter : MonoBehaviour
 
     private float stepsTimer;
 
-    public void PlaySteps(GroundType groundType, float speedNormalized)
+    public void PlaySteps(Player.GroundType groundType, float speedNormalized)
     {
-        if (groundType == GroundType.None)
+        if (groundType == Player.GroundType.none)
             return;
 
         stepsTimer += Time.fixedDeltaTime * speedNormalized;
 
         if (stepsTimer >= timer)
         {
-            var steps = groundType == GroundType.Hard ? softGround : hardGround;
+            var steps = groundType == Player.GroundType.hardGround ? softGround : hardGround;
             //int index = Random.Range(0, steps.Length);
             //footstepsAudioSource.PlayOneShot(steps[index]);
 
