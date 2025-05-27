@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Controle do Movimento")] 
+    [Header("Controle do Movimento")]
     [SerializeField] public float SpeedWalk;
     [SerializeField] public float SpeedRun;
     [Header("Controle do Movimento")]
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [SerializeField] public float faseMax;
     [SerializeField] public float faseMinBoss;
     [SerializeField] public float faseMaxBoss;
-    [Header("Controle do Pulo")] 
+    [Header("Controle do Pulo")]
     [SerializeField] public float JumpForce;
     [SerializeField] public bool isJumping = false;
     [SerializeField] public Transform armWalk;
@@ -35,15 +35,25 @@ public class Player : MonoBehaviour
     //Para congelar o player no final do Tutorial - caso encontre outra utilidade pode usar tambem
     public static bool isFrozen = false;
 
+    [Header("Som de Passos")]
+    public AudioClip stepSoftClip;
+    public AudioClip stepHardClip;
+    private AudioSource audioSource;
+    public float stepInterval = 0.5f; // intervalo entre sons de passos
+    private float stepTimer;
+    private GroundType currentGround = GroundType.None;
+
+
     public enum GroundType
     {
-        softGround,
-        hardGround,
-        none
+        None,
+        Soft,
+        Hard
     }
 
 
-    void Awake() {
+    void Awake()
+    {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
         currentHealth = maxHealth;
@@ -52,7 +62,12 @@ public class Player : MonoBehaviour
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>(); 
+        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            audioSource = gameObject.AddComponent<AudioSource>();
+        }
     }
 
     void Update()
@@ -60,6 +75,7 @@ public class Player : MonoBehaviour
         if (isFrozen) return;
         Move();
         Jump();
+        CheckGroundType();
     }
 
     void Move()
@@ -72,8 +88,8 @@ public class Player : MonoBehaviour
 
         // Variaveis para fazer o controle do personagem
         float positionPlayerNow = transform.position.x;
-        float positionPlayerByCameraMin = cameraTransform.position.x + ( bossFinalFase2 ? faseMinBoss : faseMin );
-        float positionPlayerByCameraMax = cameraTransform.position.x + ( bossFinalFase2 ? faseMaxBoss : faseMax );
+        float positionPlayerByCameraMin = cameraTransform.position.x + (bossFinalFase2 ? faseMinBoss : faseMin);
+        float positionPlayerByCameraMax = cameraTransform.position.x + (bossFinalFase2 ? faseMaxBoss : faseMax);
         // Verifica se o jogador está tentando andar para a esquerda ou direita da camera
         if ((positionPlayerNow <= positionPlayerByCameraMin && moveInput < 0) || (positionPlayerNow >= positionPlayerByCameraMax && moveInput > 0))
         {
@@ -122,12 +138,26 @@ public class Player : MonoBehaviour
                 anim.SetBool("run", false);
             }
         }
+
+        if (movement.x != 0)
+        {
+            stepTimer += Time.deltaTime;
+            if (stepTimer >= stepInterval)
+            {
+                PlayStepSound();
+                stepTimer = 0f;
+            }
+        }
+        else
+        {
+            stepTimer = 0f;
+        }
     }
 
     void Jump()
     {
         if (isFrozen) return;
-        
+
         if (Input.GetButtonDown("Jump") && !isJumping)
         {
             rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
@@ -136,16 +166,20 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision) {
-        if(collision.gameObject.layer == 7){
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
             isJumping = false;
             anim.SetBool("jump", false);
             armControl.PlayerIsJumping(false);
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision) {
-        if(collision.gameObject.layer == 7){
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7)
+        {
             isJumping = true;
         }
     }
@@ -155,8 +189,8 @@ public class Player : MonoBehaviour
     {
         currentHealth -= damage;
         playerLifeBar.DamageLife(damage);
-        
-        if(currentHealth <= 0)
+
+        if (currentHealth <= 0)
         {
             Die();
         }
@@ -175,5 +209,37 @@ public class Player : MonoBehaviour
     public void SetBossFinalFase2(bool finalBossActive)
     {
         bossFinalFase2 = finalBossActive;
+    }
+
+    void CheckGroundType()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 1f, LayerMask.GetMask("Ground"));
+        if (hit.collider != null)
+        {
+            GroundIdentifier ground = hit.collider.GetComponent<GroundIdentifier>();
+            if (ground != null)
+            {
+                currentGround = ground.groundType;
+            }
+        }
+        else
+        {
+            currentGround = GroundType.None;
+        }
+    }
+    
+    void PlayStepSound()
+    {
+        switch (currentGround)
+        {
+            case GroundType.Soft:
+                audioSource.PlayOneShot(stepSoftClip);
+                break;
+            case GroundType.Hard:
+                audioSource.PlayOneShot(stepHardClip);
+                break;
+            default:
+                break;
+        }
     }
 }
