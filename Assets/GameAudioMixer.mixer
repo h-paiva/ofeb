@@ -55,6 +55,7 @@ AudioMixerController:
   - guids:
     - 4f92848720c7cd043997b5ce98d1d8bc
     - c58b0c1d2efb5f34eb5cb607416c4f2a
+    - 00cdd3995580dd242acc1d91dfe847fa
     name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
@@ -69,6 +70,7 @@ AudioMixerGroupController:
   m_GroupID: 4f92848720c7cd043997b5ce98d1d8bc
   m_Children:
   - {fileID: -6458101304091518061}
+  - {fileID: 8099954493684395721}
   m_Volume: 85b2035a6b6084a488f5f76830f79ff9
   m_Pitch: 3c4f45c53f100f246911b9eb21eb1ba5
   m_Send: 00000000000000000000000000000000
@@ -118,3 +120,36 @@ AudioMixerEffectController:
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0
+--- !u!244 &8006684899215492028
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 3c082458ccb325140b598fd3d9793fef
+  m_EffectName: Attenuation
+  m_MixLevel: 1f9e138c300a2c74683a58b774a6c32c
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &8099954493684395721
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Tiro
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 00cdd3995580dd242acc1d91dfe847fa
+  m_Children: []
+  m_Volume: 47bec287bf04b5043a81b784ab1f5e4c
+  m_Pitch: 07b5e815da1c3e04fab80c428ab827a2
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 8006684899215492028}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
