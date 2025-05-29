@@ -204,6 +204,8 @@ public class Player : MonoBehaviour
         anim.SetBool("dead", true);
         Destroy(gameObject, 5f);
         restartMenu.gameObject.SetActive(true);
+
+        FindObjectOfType<GameOverUI>().ShowGameOver(); //Chama o GameOver
     }
     // Método para permitir que o jogador se mova mais quando estiver lutando contra o boss final da fase 2
     public void SetBossFinalFase2(bool finalBossActive)

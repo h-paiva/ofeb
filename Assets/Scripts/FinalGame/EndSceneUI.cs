@@ -13,5 +13,6 @@ public class EndSceneUI : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        Debug.Log("Saiu do jogo"); // Funciona só em build
     }
 }
