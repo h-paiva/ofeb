@@ -9,7 +9,7 @@ public class PlayerAimAndShoot : MonoBehaviour
     private float angle;
     private GameObject bulletInst;
     public CameraConfig cameraConfig;
-    public static bool isFrozen = false;
+    public static bool isFrozen = false; //Freeza o braço
 
     [SerializeField] private GameObject gun;
     [SerializeField] private GameObject bullet;
@@ -44,6 +44,7 @@ public class PlayerAimAndShoot : MonoBehaviour
 
     private void HandlerGunRotation()
     {
+        if (isFrozen) return;
         if (PlayerAimAndShoot.isFrozen) return;
         //rotate the gun towrds the mouse position
         worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);

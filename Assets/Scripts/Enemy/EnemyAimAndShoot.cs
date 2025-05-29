@@ -14,6 +14,7 @@ public class EnemyAimAndShoot : MonoBehaviour
     [SerializeField] private float shootingRange = 10f; // Alcance máximo para atirar
     [SerializeField] private float timeBetweenShots = 2f; // Tempo entre os tiros
     private float nextTimeToFire = 0f;
+    public static bool isFrozen = false; //Freeza o braço inimigo
 
     void Start()
     {
@@ -22,14 +23,15 @@ public class EnemyAimAndShoot : MonoBehaviour
     }
 
     void Update()
-    {   
+    {
+        if (isFrozen) return;
         if (playerTransform != null)
         {
             float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
-            
+
             if (distanceToPlayer <= shootingRange) // Só mira e atira se o jogador estiver no alcance
             {
-                HandlerGunRotation(); 
+                HandlerGunRotation();
                 HandlerGunShooting();
             }
         }

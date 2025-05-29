@@ -85,7 +85,10 @@ public class Buttons : MonoBehaviour
 
     public void Pause()//Abrindo o Menu
     {
-        Player.isFrozen = true;
+        Player.isFrozen = true; //Freza o player ao abrir o menu
+        Enemy.isFrozen = true; //Freza o enemy ao abrir o menu
+        PlayerAimAndShoot.isFrozen = true; //Freza o braço ao abrir o menu
+        EnemyAimAndShoot.isFrozen = true; //Freza o braço do inigo ao abrir o menu
         PauseMenuPanel.SetActive(true);
         Time.timeScale = 0;
         Animator anim = GetComponent<Animator>();
@@ -100,7 +103,10 @@ public class Buttons : MonoBehaviour
 
     public void BackGaming() //FasesJogaveis //Voltar ao jogo
     {
-        Player.isFrozen = false;
+        Player.isFrozen = false; //Volta ao normal quando sai do menu
+        Enemy.isFrozen = false; //Volta ao normal quando sai do menu
+        PlayerAimAndShoot.isFrozen = false; //Volta ao normal quando sai do menu
+        EnemyAimAndShoot.isFrozen = false; //Volta ao normal quando sai do menu
         SettingsMenu.SetActive(false);
         PauseMenuPanel.SetActive(false);
         Time.timeScale = 1;

@@ -16,8 +16,10 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float maxHealth = 100f; // Vida máxima do inimigo
     private float currentHealth; // Vida atual do inimigo
     private bool isDead = false; // Verifica se o inimigo está morto
+    public static bool isFrozen = false; //Para freezar no pause ou em algum outro momento se necessario
 
-[Header("FSM Configurações")]
+
+    [Header("FSM Configurações")]
     private Transform playerTransform;
     public float talkRange = 10f; // Distância para falar
     public float distanceToPlayer; // Torna a distância ao jogador pública
@@ -51,6 +53,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         if (isDead) return;
+        if (isFrozen) return;
 
         // Calcula e atualiza a distância ao jogador
         distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
