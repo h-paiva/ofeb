@@ -11930,6 +11930,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1234152553}
     - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: faseMax
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
+      propertyPath: faseMin
+      value: -9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488319263951475288, guid: 038b5b9252218f04a9fb07fa929b424c, type: 3}
       propertyPath: armShoot
       value: 
       objectReference: {fileID: 826507777}

@@ -2691,13 +2691,14 @@ GameObject:
   - component: {fileID: 310716126}
   - component: {fileID: 310716128}
   - component: {fileID: 310716127}
+  - component: {fileID: 310716129}
   m_Layer: 5
   m_Name: Victory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &310716126
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2759,6 +2760,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310716125}
   m_CullTransparentMesh: 1
+--- !u!114 &310716129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310716125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e637e17552c1549845f37629ec1b33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 310716125}
 --- !u!4 &333190992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
@@ -8574,6 +8588,7 @@ MonoBehaviour:
   maxHealth: 800
   currentHealth: 0
   enemyLifeBar: {fileID: 2096385338}
+  showPanel: {fileID: 310716129}
 --- !u!70 &991423323
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -14815,7 +14830,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 215542799}
         m_TargetAssemblyTypeName: Buttons, Assembly-CSharp
-        m_MethodName: ReturnToMainMenuButton
+        m_MethodName: BackMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14824,7 +14839,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 1
+        m_CallState: 2
 --- !u!114 &1827634001
 MonoBehaviour:
   m_ObjectHideFlags: 0
