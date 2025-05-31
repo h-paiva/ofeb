@@ -15,6 +15,7 @@ public class CheckpointFinal : MonoBehaviour
 
         if (TutorialManager.Instance != null)
         {
+            /*
             TutorialManager.Instance.PararContagem();
             jaFinalizou = true;
 
@@ -29,7 +30,7 @@ public class CheckpointFinal : MonoBehaviour
                 anim.SetBool("jump", false);
                 anim.SetBool("idle", true);
             }
-
+            */
             Invoke("CarregarProximaCena", 3f);
         }
 
