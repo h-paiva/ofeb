@@ -122,7 +122,7 @@ MonoBehaviour:
   distance: 0.5
   whatCollisionBullet:
     serializedVersion: 2
-    m_Bits: 384
+    m_Bits: 896
   damage: 10
 --- !u!61 &1064777410395378524
 BoxCollider2D:

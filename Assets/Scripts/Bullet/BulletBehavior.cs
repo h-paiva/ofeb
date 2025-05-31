@@ -42,6 +42,18 @@ public class BulletBehavior : MonoBehaviour
                 Destroy(gameObject);
             }
 
+            // Acertou inimigo
+            if (hitInfo.collider.CompareTag("Boss"))
+            {
+                Bombardeiro bombardeiro = hitInfo.collider.GetComponent<Bombardeiro>();
+                if (bombardeiro != null)
+                {
+                    bombardeiro.TakeDamage(damage); // CORREÇÃO: usar o valor configurado no Inspector
+                }
+                Debug.Log("Acertou o boss");
+                Destroy(gameObject);
+            }
+
             // Acertou jogador
             else if (hitInfo.collider.CompareTag("Player"))
             {

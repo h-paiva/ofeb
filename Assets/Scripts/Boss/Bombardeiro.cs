@@ -97,6 +97,7 @@ public class Bombardeiro : MonoBehaviour
     // Método para receber dano
     public void TakeDamage(float damage)
     {
+        Debug.Log("TOMOU DANO");
         enemyLifeBar.DamageLife(damage);
         if (isDead) return; // Se já estiver morto, não recebe mais dano
 
@@ -107,6 +108,7 @@ public class Bombardeiro : MonoBehaviour
         
         if(currentHealth <= 0)
         {
+            Debug.Log("DESTRUIU O BOSS");
             Die();
         }
     }
@@ -125,7 +127,7 @@ public class Bombardeiro : MonoBehaviour
         anim.SetBool("death", true);
 
         // Destruir o inimigo após um delay (opcional)
-        Destroy(gameObject, 5f); // 5 segundos de delay
+        Destroy(gameObject, 0.3f); // 5 segundos de delay
     }
 
     // Método para verificar se está morto (pode ser útil para outros scripts)
