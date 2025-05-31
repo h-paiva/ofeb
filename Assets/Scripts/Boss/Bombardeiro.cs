@@ -26,6 +26,8 @@ public class Bombardeiro : MonoBehaviour
     public EnemyLifeBar enemyLifeBar;
     private Animator anim;
 
+    public ShowPanel showPanel;
+
     void Start()
     {
         
@@ -128,6 +130,17 @@ public class Bombardeiro : MonoBehaviour
 
         // Destruir o inimigo após um delay (opcional)
         Destroy(gameObject, 0.3f); // 5 segundos de delay
+        
+        StartCoroutine(FreezeAfterDelay(0.5f));
+
+    }
+
+    private System.Collections.IEnumerator FreezeAfterDelay(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay); // <--- ESSENCIAL
+
+        Time.timeScale = 0f; // Pause game
+        showPanel.ShowPanelAction(); // Show panel
     }
 
     // Método para verificar se está morto (pode ser útil para outros scripts)
