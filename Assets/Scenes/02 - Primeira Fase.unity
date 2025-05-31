@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -653,7 +657,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -771,6 +775,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -965,6 +973,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -1235,6 +1247,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -1521,6 +1537,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -2128,6 +2148,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -2313,7 +2337,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2397,7 +2421,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2477,6 +2501,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -2989,6 +3017,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -3408,6 +3440,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -3681,6 +3717,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -4562,6 +4602,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -5204,7 +5248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 186231868}
   m_Layer: 0
-  m_Name: Fence - 7/10
+  m_Name: Fence - 7/12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5387,7 +5431,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5556,6 +5600,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -6204,7 +6252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 220340666}
   m_Layer: 0
-  m_Name: Roads - 11
+  m_Name: Roads - 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6547,6 +6595,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -7630,6 +7682,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -8040,6 +8096,10 @@ PrefabInstance:
       propertyPath: randomPhrases.Array.data[19]
       value: Zona segura violada!
       objectReference: {fileID: 0}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -8379,7 +8439,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9012,6 +9072,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -9320,7 +9384,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 5bec0472df62bb244ba0fc9f6b2dc8f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9420,6 +9484,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -9521,6 +9589,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -9981,6 +10053,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -10967,6 +11043,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -11277,7 +11357,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11357,6 +11437,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -11718,7 +11802,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12398,7 +12482,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12618,7 +12702,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 326a3a4a71ae02e48a488a6b1758570b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12718,6 +12802,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -12907,6 +12995,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -13172,6 +13264,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -13437,6 +13533,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -13714,6 +13814,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -13895,6 +13999,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -14600,6 +14708,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -15043,7 +15155,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15797,7 +15909,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16021,7 +16133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 112
   m_Sprite: {fileID: 21300000, guid: 3b115ce14bbdf274eadd92ab75a7cba6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -16336,6 +16448,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -16653,6 +16769,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -17486,7 +17606,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 326a3a4a71ae02e48a488a6b1758570b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -17586,6 +17706,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -17859,6 +17983,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -18375,6 +18503,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -18564,6 +18696,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -19238,6 +19374,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -19424,6 +19564,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -19613,6 +19757,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -20062,6 +20210,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -20247,7 +20399,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20327,6 +20479,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -20637,7 +20793,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -20722,6 +20878,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -21083,7 +21243,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 5bec0472df62bb244ba0fc9f6b2dc8f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -21262,6 +21422,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -22072,6 +22236,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -22316,6 +22484,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -23445,6 +23617,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -23706,6 +23882,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -24127,7 +24307,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24586,6 +24766,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -24780,6 +24964,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -25099,6 +25287,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -25394,6 +25586,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -25614,7 +25810,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 5bec0472df62bb244ba0fc9f6b2dc8f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -25709,6 +25905,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -26109,6 +26309,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -26528,6 +26732,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -26799,6 +27007,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -27434,6 +27646,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -27615,6 +27831,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -27796,6 +28016,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -28611,6 +28835,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -28862,6 +29090,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -29051,6 +29283,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -29275,7 +29511,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -29528,6 +29764,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -30408,6 +30648,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -30599,7 +30843,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -30820,6 +31064,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -31013,7 +31261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -31186,7 +31434,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -31637,6 +31885,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -32003,7 +32255,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -32097,7 +32349,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -32177,6 +32429,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -32366,6 +32622,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -32738,6 +32998,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -32928,7 +33192,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -33200,6 +33464,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -33474,7 +33742,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34030,7 +34298,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34335,6 +34603,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -34723,7 +34995,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -34887,6 +35159,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -35264,7 +35540,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -35428,6 +35704,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -35917,6 +36197,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -36402,7 +36686,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -37132,7 +37416,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 112
   m_Sprite: {fileID: 21300000, guid: 3b115ce14bbdf274eadd92ab75a7cba6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -37237,6 +37521,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -37580,7 +37868,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 326a3a4a71ae02e48a488a6b1758570b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -37759,6 +38047,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -38029,6 +38321,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -38784,7 +39080,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -39038,7 +39334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 5bec0472df62bb244ba0fc9f6b2dc8f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -39346,6 +39642,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -39529,7 +39829,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 326a3a4a71ae02e48a488a6b1758570b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -40339,6 +40639,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -40622,7 +40926,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -41149,7 +41453,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -41229,6 +41533,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -41360,7 +41668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524462397}
   m_Layer: 0
-  m_Name: Craters - 12
+  m_Name: Craters - 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41939,6 +42247,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -42298,6 +42610,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -42667,6 +42983,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -43547,7 +43867,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -43705,7 +44025,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 5bec0472df62bb244ba0fc9f6b2dc8f9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -43804,7 +44124,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -43982,7 +44302,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -44080,7 +44400,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!4 &1634463148 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+  m_CorrespondingSourceObject: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
   m_PrefabInstance: {fileID: 4227103434559082277}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1634702124
@@ -45337,7 +45657,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -45518,7 +45838,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 326a3a4a71ae02e48a488a6b1758570b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -45613,6 +45933,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -45806,7 +46130,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -46296,7 +46620,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -46861,6 +47185,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -47059,7 +47387,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -47560,7 +47888,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -48140,6 +48468,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -48329,6 +48661,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -49594,7 +49930,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 13
+  m_SortingOrder: 15
   m_Sprite: {fileID: 21300000, guid: 0058559646c95cc4b9752a0ea149a5bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -49679,6 +50015,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -50462,6 +50802,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -50800,7 +51144,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -51340,6 +51684,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -51529,6 +51877,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -51798,7 +52150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -51935,6 +52287,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -52124,6 +52480,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -52719,6 +53079,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -53313,6 +53677,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -53408,7 +53776,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 14
   m_Sprite: {fileID: 21300000, guid: 1bab92766a4cb5a4295d25fd4e22452c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -53503,6 +53871,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -53690,6 +54062,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -53887,6 +54263,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -54247,6 +54627,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -55236,6 +55620,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -55425,6 +55813,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -55752,6 +56144,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -56112,6 +56508,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -56302,7 +56702,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 112
   m_Sprite: {fileID: 21300000, guid: 3b115ce14bbdf274eadd92ab75a7cba6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -56425,6 +56825,10 @@ PrefabInstance:
       propertyPath: dialogueCanvas
       value: 
       objectReference: {fileID: 643948053}
+    - target: {fileID: 8237504673402037955, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -56774,7 +57178,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 11
+  m_SortingOrder: 13
   m_Sprite: {fileID: 21300000, guid: 578a1a88753ef8249b183e7cc06a483b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -56885,7 +57289,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142117482}
   m_Layer: 0
-  m_Name: ArmyTents - 13
+  m_Name: ArmyTents - 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57026,91 +57430,71 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 664022955}
     m_Modifications:
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 239804547972631290, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 239804547972631290, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -683.17
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalPosition.y
       value: -651.0161
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 718867337320772067, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 3616958352408539857, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3646858464862981355, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3646858464862981355, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6541455220407954053, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+    - target: {fileID: 6290242703777971664, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 339292782}
+    - target: {fileID: 6290242703777971664, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
+      propertyPath: dialogueCanvas
+      value: 
+      objectReference: {fileID: 643948053}
+    - target: {fileID: 6992965012849011127, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
       propertyPath: m_Name
-      value: Enemy Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 339292782}
-    - target: {fileID: 7818394178554855138, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
-      propertyPath: dialogueCanvas
-      value: 
-      objectReference: {fileID: 643948053}
-    - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
-      propertyPath: dialogueText
-      value: 
-      objectReference: {fileID: 339292782}
-    - target: {fileID: 624333525053233812, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
-      propertyPath: dialogueCanvas
-      value: 
-      objectReference: {fileID: 643948053}
-    - target: {fileID: 6248373325339093149, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6248373325339093149, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6439391130160676102, guid: 29bae5a908c00d246b6e1482c53fc8b8, type: 3}
-      propertyPath: m_GravityScale
-      value: 10
+      value: Enemy Variant 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 665f5068278fdb84481e047edb854e3f, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 830b25c17e63b9149b1cbf23716225e7, type: 3}
 --- !u!4 &5928928920862139021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5802168371763152731, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
@@ -57235,6 +57619,14 @@ PrefabInstance:
     - target: {fileID: 1088246543215711341, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.368
+      objectReference: {fileID: 0}
+    - target: {fileID: 3205172407079484551, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177902165335806412, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5802168371763152731, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: m_LocalPosition.x

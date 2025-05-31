@@ -488,6 +488,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -66252384, guid: afdea11b6efe54b4d9a06c7962c1e68c, type: 3}
+    - target: {fileID: 2669403751693617808, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4312858954927100593, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
       propertyPath: ArmEnemy
       value: 
@@ -587,6 +591,14 @@ PrefabInstance:
     - target: {fileID: 6819347321899589040, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371422970051398624, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f431391a12d2d564f9681376ae4c8e7a, type: 3}
+    - target: {fileID: 7371422970051398624, guid: b833d4edaf959d14488a0606779e6af1, type: 3}
+      propertyPath: m_SortingOrder
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
