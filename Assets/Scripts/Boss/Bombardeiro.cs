@@ -22,6 +22,7 @@ public class Bombardeiro : MonoBehaviour
     [SerializeField] private float maxHealth = 100f; // Vida máxima do inimigo
     public float currentHealth; // Vida atual do inimigo
     private bool isDead = false; // Verifica se o inimigo está morto
+    private bool activeBoss = false; // Ativa a mecanica do Boss
     public EnemyLifeBar enemyLifeBar;
     private Animator anim;
 
@@ -43,43 +44,54 @@ public class Bombardeiro : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return; 
-            
-        if (player == null || pontoEsquerdo == null || pontoDireito == null)
-            return;
-
-        tempoDesdeUltimaBomba += Time.deltaTime;
-
-        // Define direção com base no sentido atual
-        float direcao = indoParaDireita ? 1 : -1;
-
-        // Move o bombardeiro horizontalmente
-        transform.Translate(Vector2.right * direcao * velocidade * Time.deltaTime);
-
-        // Verifica limites
-        if (transform.position.x >= pontoDireito.position.x)
-            indoParaDireita = false;
-        else if (transform.position.x <= pontoEsquerdo.position.x)
-            indoParaDireita = true;
-
-        // Define o scale para "virar" visualmente
-        Vector3 escala = transform.localScale;
-        escala.x = indoParaDireita ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
-        transform.localScale = escala;
-
-        // Verifica se está em cima do jogador
-        if (Mathf.Abs(transform.position.x - player.position.x) < toleranciaParaSoltar &&
-            tempoDesdeUltimaBomba >= tempoEntreBombas)
+        if (activeBoss)
         {
-            SoltarBomba();
-            tempoDesdeUltimaBomba = 0f;
-            Debug.Log("Soltou a bomba!");
+
+            if (isDead) return;
+
+            if (player == null || pontoEsquerdo == null || pontoDireito == null)
+                return;
+
+            tempoDesdeUltimaBomba += Time.deltaTime;
+
+            // Define direção com base no sentido atual
+            float direcao = indoParaDireita ? 1 : -1;
+
+            // Move o bombardeiro horizontalmente
+            transform.Translate(Vector2.right * direcao * velocidade * Time.deltaTime);
+
+            // Verifica limites
+            if (transform.position.x >= pontoDireito.position.x)
+                indoParaDireita = false;
+            else if (transform.position.x <= pontoEsquerdo.position.x)
+                indoParaDireita = true;
+
+            // Define o scale para "virar" visualmente
+            Vector3 escala = transform.localScale;
+            escala.x = indoParaDireita ? Mathf.Abs(escala.x) : -Mathf.Abs(escala.x);
+            transform.localScale = escala;
+
+            // Verifica se está em cima do jogador
+            if (Mathf.Abs(transform.position.x - player.position.x) < toleranciaParaSoltar &&
+                tempoDesdeUltimaBomba >= tempoEntreBombas)
+            {
+                SoltarBomba();
+                tempoDesdeUltimaBomba = 0f;
+                Debug.Log("Soltou a bomba!");
+            }
         }
     }
 
     void SoltarBomba()
     {
         Instantiate(bombaPrefab, pontoDeSoltarBomba.position, Quaternion.identity);
+    }
+
+    // Método para permitir que o jogador se mova mais quando estiver lutando contra o boss final da fase 2
+    public void SetActiveBoss(bool finalBossActive)
+    {
+        activeBoss = finalBossActive;
+        Debug.Log("ATIVOU O BOSS");
     }
 
     // Método para receber dano
