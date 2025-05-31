@@ -268,7 +268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -7702,7 +7702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -9258,7 +9258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -10358,7 +10358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -11317,7 +11317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -11524,7 +11524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -12992,7 +12992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -13235,7 +13235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -14309,7 +14309,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -15345,7 +15345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -16029,7 +16029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -16404,7 +16404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -16882,7 +16882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -17435,7 +17435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -18890,7 +18890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -19547,7 +19547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -20590,7 +20590,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -20965,7 +20965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -21893,7 +21893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -22801,7 +22801,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -23092,7 +23092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
@@ -23830,7 +23830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2534558957852152283, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: maxHealth
-      value: 30
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 2687920051906033172, guid: b89d47357bdbe22429a92e7a436aed51, type: 3}
       propertyPath: m_LocalScale.x
