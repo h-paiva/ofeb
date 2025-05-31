@@ -35,15 +35,15 @@ public class Player : MonoBehaviour
     //Para congelar o player no final do Tutorial - caso encontre outra utilidade pode usar tambem
     public static bool isFrozen = false;
 
+
     [Header("Som de Passos")]
     public AudioClip stepSoftClip;
     public AudioClip stepHardClip;
     private AudioSource audioSource;
     public float stepInterval = 0.5f; // intervalo entre sons de passos
     private float stepTimer;
+    private float currentStepInterval;
     private GroundType currentGround = GroundType.None;
-
-
     public enum GroundType
     {
         None,
@@ -51,6 +51,8 @@ public class Player : MonoBehaviour
         Hard
     }
 
+    [Header("Game Over")]
+    public ShowPanel gameOverPanel;
 
     void Awake()
     {
@@ -139,7 +141,9 @@ public class Player : MonoBehaviour
             }
         }
 
-        if (movement.x != 0)
+        currentStepInterval = Input.GetKey(KeyCode.LeftShift) ? 0.3f : 0.6f;
+
+        if (movement.x != 0  && !isJumping)
         {
             stepTimer += Time.deltaTime;
             if (stepTimer >= stepInterval)
@@ -203,10 +207,20 @@ public class Player : MonoBehaviour
         armShoot.gameObject.SetActive(false);
         anim.SetBool("dead", true);
         Destroy(gameObject, 5f);
-        restartMenu.gameObject.SetActive(true);
-
-        FindObjectOfType<GameOverUI>().ShowGameOver(); //Chama o GameOver
+        //restartMenu.gameObject.SetActive(true);
+        
+        StartCoroutine(FreezeShowGameOverMenu(1f));
     }
+
+    private System.Collections.IEnumerator FreezeShowGameOverMenu(float delay)
+    {
+        yield return new WaitForSecondsRealtime(delay); // <--- ESSENCIAL
+
+        Time.timeScale = 0f; // Pause game
+        FindObjectOfType<GameOverUI>().ShowGameOver(); //Chama o GameOver
+
+    }
+
     // Método para permitir que o jogador se mova mais quando estiver lutando contra o boss final da fase 2
     public void SetBossFinalFase2(bool finalBossActive)
     {
