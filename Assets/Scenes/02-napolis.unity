@@ -20526,6 +20526,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1524462397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &921171701
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.517
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.101125866
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275464179973656357, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1968065014854942367, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
+      propertyPath: m_Name
+      value: Box (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f9e874f979180441b99d4736a78f700, type: 3}
 --- !u!1001 &922341776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26006,7 +26063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullets: 8
-  reloadTime: 5
+  reloadTime: 4
   fireRate: 1.5
   bulletsText: {fileID: 244861481}
 --- !u!1001 &1207733735
@@ -46208,7 +46265,7 @@ PrefabInstance:
     - target: {fileID: 355540514826148130, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: audioClipReload
       value: 
-      objectReference: {fileID: 8300000, guid: 11d0a1035bec45945a64bbd015153101, type: 3}
+      objectReference: {fileID: 8300000, guid: 861b19e2f19790c439ed391b29ad7e4e, type: 3}
     - target: {fileID: 355540514826148130, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: audioSourceReload
       value: 
@@ -46282,9 +46339,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1294663008}
     - target: {fileID: 6687085159962887550, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
+      propertyPath: stepInterval
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687085159962887550, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: stepSoftClip
       value: 
-      objectReference: {fileID: 8300000, guid: 27714f71c4afe9f4bb64ef04599e9078, type: 3}
+      objectReference: {fileID: 8300000, guid: 5220cd86c3873fb47834d9f6ec86c62f, type: 3}
     - target: {fileID: 6687085159962887550, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: gameOverPanel
       value: 
@@ -46429,3 +46490,4 @@ SceneRoots:
   - {fileID: 791418644}
   - {fileID: 1380182691}
   - {fileID: 1894671744}
+  - {fileID: 921171701}
