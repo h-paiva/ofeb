@@ -209,7 +209,7 @@ public class Player : MonoBehaviour
         Destroy(gameObject, 5f);
         //restartMenu.gameObject.SetActive(true);
         
-        StartCoroutine(FreezeShowGameOverMenu(1f));
+        StartCoroutine(FreezeShowGameOverMenu(3f));
     }
 
     private System.Collections.IEnumerator FreezeShowGameOverMenu(float delay)

@@ -28,7 +28,7 @@ public class GameOverUI : MonoBehaviour
     public void GoToMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("00 - Menu Inicial"); // Altere se o nome do menu for outro
+        SceneManager.LoadScene("00-menu"); // Altere se o nome do menu for outro
     }
 
     public void QuitGame()

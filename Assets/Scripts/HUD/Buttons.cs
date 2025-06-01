@@ -54,7 +54,7 @@ public class Buttons : MonoBehaviour
     public void NewGameMenuButton() //Menu
     {
         print("Novo Jogo iniciado!");
-        SceneManager.LoadScene("01 - Tutorial", LoadSceneMode.Single); // Cena de tutorial
+        SceneManager.LoadScene("01-rio-de-janeiro", LoadSceneMode.Single); // Cena de tutorial
     }
 
     public void OptionsButton() //Menu

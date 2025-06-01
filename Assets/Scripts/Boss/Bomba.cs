@@ -60,6 +60,6 @@ public class Bomba : MonoBehaviour
             animator.SetTrigger("Explodir");
         }
 
-        Destroy(gameObject); // Destrói imediatamente (sem delay)
+        Destroy(gameObject, tempoParaDestruir); 
     }
 }
