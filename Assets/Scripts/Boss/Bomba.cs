@@ -9,6 +9,8 @@ public class Bomba : MonoBehaviour
     private Animator animator;
     private bool explodiu = false;
 
+    private AudioSource audioSource;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -21,27 +23,29 @@ public class Bomba : MonoBehaviour
         if (colisao.gameObject.CompareTag("Player"))
         {
             Player player = colisao.collider.GetComponent<Player>();
-                if (player != null)
-                {
-                    player.TakeDamage(damage);
-                }
-            
+            if (player != null)
+            {
+                player.TakeDamage(damage);
+                
+            }
+
             Debug.Log("Jogador acertado!");
-            ExplodirComDelay(); // Permite a animação rodar antes de destruir
+            Explodir(); // Permite a animação rodar antes de destruir
         }
         else if (colisao.gameObject.CompareTag("Ground"))
         {
-            ExplodirInstantaneo(); // Some imediatamente ao tocar o chão
+            Explodir(); // Some imediatamente ao tocar o chão
         }
     }
 
-    void ExplodirComDelay()
+    void Explodir()
     {
         explodiu = true;
 
         if (animator != null)
         {
             animator.SetTrigger("Explodir");
+            audioSource.Play();
         }
 
         GetComponent<Collider2D>().enabled = false;
@@ -49,17 +53,5 @@ public class Bomba : MonoBehaviour
         GetComponent<Rigidbody2D>().isKinematic = true;
 
         Destroy(gameObject, tempoParaDestruir);
-    }
-
-    void ExplodirInstantaneo()
-    {
-        explodiu = true;
-
-        if (animator != null)
-        {
-            animator.SetTrigger("Explodir");
-        }
-
-        Destroy(gameObject, tempoParaDestruir); 
     }
 }
