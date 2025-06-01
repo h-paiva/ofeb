@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Bombardeiro : MonoBehaviour
 {
@@ -27,6 +28,8 @@ public class Bombardeiro : MonoBehaviour
     private Animator anim;
 
     public ShowPanel showPanel;
+
+    [SerializeField] private string nomeLevel;
 
     void Start()
     {
@@ -129,18 +132,25 @@ public class Bombardeiro : MonoBehaviour
         anim.SetBool("death", true);
 
         // Destruir o inimigo após um delay (opcional)
-        Destroy(gameObject, 0.3f); // 5 segundos de delay
         
-        StartCoroutine(FreezeAfterDelay(0.5f));
+        //Destroy(gameObject, 5f); // 5 segundos de delay
 
+        //StartCoroutine(FreezeAfterDelay(1f));
+        Invoke(nameof(ProximaFase), 0.3f);
+        
     }
 
+    private void ProximaFase()
+    {
+        Debug.Log("Proxima fase");
+        SceneManager.LoadScene("05 - FinalGame");
+    }
     private System.Collections.IEnumerator FreezeAfterDelay(float delay)
     {
         yield return new WaitForSecondsRealtime(delay); // <--- ESSENCIAL
-
-        Time.timeScale = 0f; // Pause game
-        showPanel.ShowPanelAction(); // Show panel
+        Debug.Log("Proxima fase");
+        //Time.timeScale = 0f; // Pause game
+        //SceneManager.LoadScene("05 - FinalGame");
     }
 
     // Método para verificar se está morto (pode ser útil para outros scripts)

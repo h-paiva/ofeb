@@ -4076,7 +4076,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 492974332}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: SoltarBomba
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -8775,7 +8775,7 @@ GameObject:
   - component: {fileID: 991423322}
   - component: {fileID: 991423326}
   - component: {fileID: 991423327}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -8802,10 +8802,11 @@ MonoBehaviour:
   toleranciaParaSoltar: 0.5
   tempoEntreBombas: 2
   player: {fileID: 567218320}
-  maxHealth: 800
+  maxHealth: 1
   currentHealth: 0
   enemyLifeBar: {fileID: 2096385338}
   showPanel: {fileID: 310716129}
+  nomeLevel: 05 - FinalGame
 --- !u!70 &991423323
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -8941,7 +8942,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 874868591090552001, guid: de9d8a855cf9a7a448c306ab95da259c, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c3e00a76c16ddc846838c88ea3e8895f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e9cebce6295c3d439eab6d1aa80a232, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -9453,7 +9454,7 @@ GameObject:
   - component: {fileID: 1086515230}
   - component: {fileID: 1086515232}
   - component: {fileID: 1086515231}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11938,7 +11939,7 @@ GameObject:
   - component: {fileID: 1454967551}
   - component: {fileID: 1454967550}
   - component: {fileID: 1454967549}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: EnemyLifeBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12662,7 +12663,7 @@ GameObject:
   - component: {fileID: 1511667166}
   - component: {fileID: 1511667168}
   - component: {fileID: 1511667167}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14481,7 +14482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358262525177326844, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.86
+      value: 173.3
       objectReference: {fileID: 0}
     - target: {fileID: 6358262525177326844, guid: 606cb4745cde28a40845af7e6e6a1389, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14951,7 +14952,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1872277475}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15959,7 +15960,7 @@ GameObject:
   - component: {fileID: 2001418962}
   - component: {fileID: 2001418964}
   - component: {fileID: 2001418963}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: Border
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16773,7 +16774,7 @@ GameObject:
   - component: {fileID: 2096385337}
   - component: {fileID: 2096385339}
   - component: {fileID: 2096385338}
-  m_Layer: 9
+  m_Layer: 3
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16992,10 +16993,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2703258197716761751, guid: 53e900948b744bb45b42609e835fd97c, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3990219642525398381, guid: 53e900948b744bb45b42609e835fd97c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 187.04175

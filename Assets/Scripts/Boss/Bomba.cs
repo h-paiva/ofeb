@@ -10,10 +10,19 @@ public class Bomba : MonoBehaviour
     private bool explodiu = false;
 
     private AudioSource audioSource;
+    public AudioClip explosionSound;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
+        audioSource.clip = explosionSound;
+
     }
 
     void OnCollisionEnter2D(Collision2D colisao)
@@ -26,7 +35,6 @@ public class Bomba : MonoBehaviour
             if (player != null)
             {
                 player.TakeDamage(damage);
-                
             }
 
             Debug.Log("Jogador acertado!");
@@ -34,24 +42,21 @@ public class Bomba : MonoBehaviour
         }
         else if (colisao.gameObject.CompareTag("Ground"))
         {
+            Debug.Log("Chão");
             Explodir(); // Some imediatamente ao tocar o chão
         }
     }
 
     void Explodir()
-    {
-        explodiu = true;
-
-        if (animator != null)
-        {
+    {       
             animator.SetTrigger("Explodir");
             audioSource.Play();
-        }
+        
 
-        GetComponent<Collider2D>().enabled = false;
-        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-        GetComponent<Rigidbody2D>().isKinematic = true;
-
+        //GetComponent<Collider2D>().enabled = false;
+        //GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        //GetComponent<Rigidbody2D>().isKinematic = true;
+        
         Destroy(gameObject, tempoParaDestruir);
     }
 }
