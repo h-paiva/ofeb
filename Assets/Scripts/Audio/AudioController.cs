@@ -5,6 +5,7 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public AudioSource audioSourceMusicaDeFundo;
+    public AudioSource audioSourceSFX;
 
     public AudioClip[] musicasDeFundo;
     // Start is called before the first frame update
@@ -16,9 +17,9 @@ public class AudioController : MonoBehaviour
         audioSourceMusicaDeFundo.Play();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToqueSFX(AudioClip clip)
     {
-        
+        AudioClip audioSourceSFX = clip;
+        audioSourceMusicaDeFundo.Play();
     }
 }
