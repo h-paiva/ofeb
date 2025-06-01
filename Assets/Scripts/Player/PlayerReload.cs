@@ -8,7 +8,6 @@ public class PlayerReload : MonoBehaviour
     public int bullets = 8;
     public float reloadTime = 2f;
     public float fireRate = 1.5f;
-
     public Text bulletsText;
 
     public static PlayerReload playerReload;
@@ -30,7 +29,8 @@ public class PlayerReload : MonoBehaviour
 
     void Start()
     {
-        UpdateBulletsUI(bullets);   
+        UpdateBulletsUI(bullets);
+        
     }
 
     // Update is called once per frame

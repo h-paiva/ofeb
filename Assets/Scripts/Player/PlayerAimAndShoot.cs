@@ -15,6 +15,8 @@ public class PlayerAimAndShoot : MonoBehaviour
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform bulletSpawnPoint;
     [SerializeField] private SpriteRenderer body;
+    public AudioSource audioSourceReload;
+    public AudioClip audioClipReload;
 
     //VARIAVEIS PARA O RELOAD
 
@@ -90,6 +92,7 @@ public class PlayerAimAndShoot : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && !reloading && bullets < playerReload.bullets)
         {
             StartCoroutine(Reloading());
+            
         }
         else if (Input.GetMouseButtonDown(0) && bullets <= 0 && !reloading)
         {
@@ -113,6 +116,12 @@ public class PlayerAimAndShoot : MonoBehaviour
     IEnumerator Reloading()
     {
         reloading = true;
+        if (audioClipReload != null && audioSourceReload != null)
+        {
+            //Para tocar o som do reload
+            audioSourceReload.clip = audioClipReload;
+            audioSourceReload.Play();
+        }
         //anim.SetBool("Reloading", true); // Caso ponha uma Animação de reloading
         yield return new WaitForSeconds(reloadTime);
         bullets = playerReload.bullets;
