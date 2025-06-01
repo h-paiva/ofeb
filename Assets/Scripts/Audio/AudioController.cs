@@ -5,8 +5,6 @@ using UnityEngine;
 public class AudioController : MonoBehaviour
 {
     public AudioSource audioSourceMusicaDeFundo; //Referente a trilha das Fases
-    public AudioSource audioSourceFundoDaCenaRJ; //Referente ao Som das ondas e ruas do Tutorial
-
     public AudioClip[] musicasDeFundo;
     // Start is called before the first frame update
     void Start()
@@ -17,6 +15,5 @@ public class AudioController : MonoBehaviour
         audioSourceMusicaDeFundo.clip = musicaDeFundo;
         //Para tocar os audios
         audioSourceMusicaDeFundo.Play();
-        audioSourceFundoDaCenaRJ.Play();
     }
 }
