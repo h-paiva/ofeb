@@ -54,7 +54,7 @@ public class CheckpointCircuito : MonoBehaviour
             Debug.LogWarning("CapitanDialog NÃO encontrado no CheckpointCircuito.");
         }
 
-        Animator anim = GetComponent<Animator>();
+        /*Animator anim = GetComponent<Animator>();
         if (anim != null)
         {
             anim.SetBool("walk", false);
@@ -64,7 +64,7 @@ public class CheckpointCircuito : MonoBehaviour
             anim.SetBool("PlayerArm", false);
             anim.SetBool("PlayerArmShooting", false);
             anim.SetBool("idle", true);
-        }
+        }*/
 
         mensagemMostrada = true;
         podeAtivar = false;
@@ -79,7 +79,7 @@ public class CheckpointCircuito : MonoBehaviour
     private IEnumerator ContagemComEsperaCoroutine()
     {
         if (scriptMovimento != null)
-            scriptMovimento.enabled = false;
+            scriptMovimento.enabled = true;
 
         yield return new WaitForSeconds(5f); // Espera antes da contagem
 
@@ -102,9 +102,6 @@ public class CheckpointCircuito : MonoBehaviour
             relogioUI.SetActive(true);
         if (somRelogio != null)
             somRelogio.Play();
-
-        if (scriptMovimento != null)
-            scriptMovimento.enabled = true;
 
         TutorialManager.Instance.IniciarContagem();
     }
