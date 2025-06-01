@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class AudioController : MonoBehaviour
 {
-    public AudioSource audioSourceMusicaDeFundo;
-    public AudioSource audioSourceSFX;
+    public AudioSource audioSourceMusicaDeFundo; //Referente a trilha das Fases
+    public AudioSource audioSourceFundoDaCenaRJ; //Referente ao Som das ondas e ruas do Tutorial
 
     public AudioClip[] musicasDeFundo;
     // Start is called before the first frame update
     void Start()
     {
         int IndexDaMusicaDeFundo = Random.Range(0, musicasDeFundo.Length);
-        AudioClip musicaDeFundoFase1 = musicasDeFundo[IndexDaMusicaDeFundo];
-        audioSourceMusicaDeFundo.clip = musicaDeFundoFase1;
+        AudioClip musicaDeFundo = musicasDeFundo[IndexDaMusicaDeFundo]; //Paras receber as musicas indexada nas fases
+        AudioClip fundoDaCenaRJ = musicasDeFundo[IndexDaMusicaDeFundo]; //Para receber as musicas de som ambiente
+        audioSourceMusicaDeFundo.clip = musicaDeFundo;
+        //Para tocar os audios
+        
         audioSourceMusicaDeFundo.Play();
+        audioSourceFundoDaCenaRJ.Play();
     }
 
-    public void ToqueSFX(AudioClip clip)
+    public void FundoDaCenaRJ(AudioClip clip)
     {
-        AudioClip audioSourceSFX = clip;
+        AudioClip audioSourceFundoDaCenaRJ = clip;
         audioSourceMusicaDeFundo.Play();
     }
 }
