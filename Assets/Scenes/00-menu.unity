@@ -1815,7 +1815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67b843f85a3a27d4aa8b718da31d9942, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeLevel: 01-rio-de-janeiro
+  nomeLevel: IntroGame1
   painelInicial: {fileID: 1680433389}
   painelOpcoes: {fileID: 1931967515}
   fadeImage: {fileID: 1576825480}
