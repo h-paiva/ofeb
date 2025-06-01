@@ -13,10 +13,10 @@ public class IntroGame : MonoBehaviour
     }
     void FatecLogo()
     {
-        FatecImage.gameObject.SetActive(false);
+        FatecImage.gameObject.SetActive(true);
     }
     void StudioLogo()
     {
-        StudioImage.gameObject.SetActive(false);
+        StudioImage.gameObject.SetActive(true);
     }
 }

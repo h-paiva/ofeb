@@ -7,7 +7,7 @@ public class EndSceneUI : MonoBehaviour
 {
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("00 - Menu Inicial"); // nome da sua cena inicial
+        SceneManager.LoadScene("00-menu"); // nome da sua cena inicial
     }
 
     public void QuitGame()
