@@ -8,33 +8,35 @@ public class LanguageManager : MonoBehaviour
     public List<TextUI> textosUI;   // Lista de textos a traduzir
 
     private Dictionary<string, Dictionary<string, string>> traducoes = new Dictionary<string, Dictionary<string, string>>();
-    private string idiomaAtual = "Português";
+    private string idiomaAtual = "Portugues (Brasil)";
 
     void Start()
     {
         // Traduções
         //PORTUGUES - PT-BR
-        traducoes["PORTUGUES"] = new Dictionary<string, string>
+        traducoes["Portugues (Brasil)"] = new Dictionary<string, string>
         {
             //LETRAS DO MENU
-            { "novo jogo", "<color=#feae34>Novo Jogo</color>" },
-            { "ajuste", "<color=#feae34>Ajustes</color>" },
-            { "sair", "<color=#feae34>Sair</color>" },
+            { "jogar", "jogar" },
+            { "opcoes", "opcoes" },
+            { "sair", "sair" },
             //LETRAS DAS OPÇÕES
-            { "volume", "<color=#feae34>VOLUME</color>" },
-            { "idioma", "<color=#feae34>IDIOMA</color>" },
-            { "sairAjuste", "SAIR" },
+            { "volume", "volume" },
+            { "idioma", "idioma" },
+            { "voltar", "voltar" },
         };
 
         //INGLES 
-        traducoes["INGLES"] = new Dictionary<string, string>
+        traducoes["Ingles"] = new Dictionary<string, string>
         {
-            { "novo jogo", "<color=#feae34>New Game</color>" },
-            { "ajuste", "<color=#feae34>Settings</color>" },
-            { "sair", "<color=#feae34>Exit</color>" },
-            { "volume", "<color=#feae34>VOLUME</color>" },
-            { "idioma", "<color=#feae34>Language</color>" },
-            { "sairAjuste", "Exit" },
+            //LETRAS DO MENU
+            { "jogar", "play" },
+            { "opcoes", "option" },
+            { "sair", "quit" },
+            //LETRAS DAS OPÇÕES
+            { "volume", "volume" },
+            { "idioma", "language" },
+            { "voltar", "back" },
         };
 
         /*
