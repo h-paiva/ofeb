@@ -21,9 +21,11 @@ public class LanguageManager : MonoBehaviour
             { "opcoes", "opcoes" },
             { "sair", "sair" },
             //LETRAS DAS OPÇÕES
-            { "volume", "volume" },
-            { "idioma", "idioma" },
-            { "voltar", "voltar" },
+            { "volumeOpcoes", "volume" },
+            { "idiomaOpcoes", "idioma" },
+            { "voltarOpcoes", "voltar" },
+            { "sairOpcoes", "sair" },
+            { "inicioOpcoes", "inicio" },
         };
 
         //INGLES 
@@ -34,9 +36,11 @@ public class LanguageManager : MonoBehaviour
             { "opcoes", "option" },
             { "sair", "quit" },
             //LETRAS DAS OPÇÕES
-            { "volume", "volume" },
-            { "idioma", "language" },
-            { "voltar", "back" },
+            { "volumeOpcoes", "volume" },
+            { "idiomaOpcoes", "language" },
+            { "voltarOpcoes", "back" },
+            { "sairOpcoes", "quit" },
+            { "inicioOpcoes", "menu" },
         };
 
         /*
