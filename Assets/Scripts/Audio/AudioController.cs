@@ -16,14 +16,7 @@ public class AudioController : MonoBehaviour
         AudioClip fundoDaCenaRJ = musicasDeFundo[IndexDaMusicaDeFundo]; //Para receber as musicas de som ambiente
         audioSourceMusicaDeFundo.clip = musicaDeFundo;
         //Para tocar os audios
-        
         audioSourceMusicaDeFundo.Play();
         audioSourceFundoDaCenaRJ.Play();
-    }
-
-    public void FundoDaCenaRJ(AudioClip clip)
-    {
-        AudioClip audioSourceFundoDaCenaRJ = clip;
-        audioSourceMusicaDeFundo.Play();
     }
 }

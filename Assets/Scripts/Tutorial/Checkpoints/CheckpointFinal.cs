@@ -31,7 +31,7 @@ public class CheckpointFinal : MonoBehaviour
                 anim.SetBool("idle", true);
             }
             */
-            Invoke("CarregarProximaCena", 3f);
+            Invoke("CarregarProximaCena", 5f);
         }
 
         print("Checkpoint final alcançado!");
