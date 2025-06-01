@@ -46340,7 +46340,7 @@ PrefabInstance:
       objectReference: {fileID: 1294663008}
     - target: {fileID: 6687085159962887550, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: stepInterval
-      value: 0
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6687085159962887550, guid: 990e90df4b6311d4eb0b5237ffe4ef57, type: 3}
       propertyPath: stepSoftClip
@@ -46384,7 +46384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6974335373780691288, guid: 067b0dcd4f4cc0a4ba05bbc82818e38b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7465433881158853114, guid: 067b0dcd4f4cc0a4ba05bbc82818e38b, type: 3}
       propertyPath: m_Pivot.x

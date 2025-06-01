@@ -11,7 +11,6 @@ public class AudioController : MonoBehaviour
     {
         int IndexDaMusicaDeFundo = Random.Range(0, musicasDeFundo.Length);
         AudioClip musicaDeFundo = musicasDeFundo[IndexDaMusicaDeFundo]; //Paras receber as musicas indexada nas fases
-        AudioClip fundoDaCenaRJ = musicasDeFundo[IndexDaMusicaDeFundo]; //Para receber as musicas de som ambiente
         audioSourceMusicaDeFundo.clip = musicaDeFundo;
         //Para tocar os audios
         audioSourceMusicaDeFundo.Play();
