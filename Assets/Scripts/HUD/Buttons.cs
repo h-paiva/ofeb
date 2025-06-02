@@ -122,8 +122,8 @@ public class Buttons : MonoBehaviour
 
     public void OpenSettings() //FasesJogaveis // Abrir os Ajustes
     {
+        PauseMenuPanel.SetActive(false);
         SettingsMenu.SetActive(true);
-        PauseMenuPanel.SetActive(true);
     }
 
     public void CloseSettings() //FasesJogaveis //Fechar os Ajustes
@@ -135,7 +135,7 @@ public class Buttons : MonoBehaviour
     public void BackMainMenu()
     {
         print("Voltando ao Menu!");
-        SceneManager.LoadScene("00 - Menu Inicial"); // Cena de tutorial
+        SceneManager.LoadScene("00-menu"); // Cena de tutorial
     }
 
 }
