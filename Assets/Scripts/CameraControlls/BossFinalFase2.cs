@@ -8,6 +8,7 @@ public class BossFinalFase2 : MonoBehaviour
     public CameraConfig cameraConfig;
     public Player player;
     public Bombardeiro bombardeiro;
+    public GameObject boss;
 
 
     private bool ativado = false;
@@ -21,6 +22,7 @@ public class BossFinalFase2 : MonoBehaviour
             cameraConfig.SetBossFinalFase2(true);
             player.SetBossFinalFase2(true);
             bombardeiro.SetActiveBoss(true);
+            boss.gameObject.SetActive(true);
         }
     }
 }
