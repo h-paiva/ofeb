@@ -12,6 +12,11 @@ public class Box : MonoBehaviour
     [SerializeField] private Color damageColor = Color.gray; // Cor escurecida por dano
     [SerializeField] private GameObject breakEffect; // Efeito visual ao quebrar a caixa
 
+    [Header("Som da Quebra da Caixa")]
+    public AudioClip clipDamageBox;
+
+    public AudioSource audioSourceDamageBox;
+
     private float initialHealth; // Valor inicial da vida, usado para cálculo de cor
     private Color originalColor;
 
@@ -19,6 +24,11 @@ public class Box : MonoBehaviour
     {
         if (rb == null)
             rb = GetComponent<Rigidbody2D>();
+
+        //Instanciando o audio
+        audioSourceDamageBox = GetComponent<AudioSource>();
+        if (audioSourceDamageBox == null)
+            audioSourceDamageBox = gameObject.AddComponent<AudioSource>();
     }
 
     private void Start()
@@ -37,7 +47,7 @@ public class Box : MonoBehaviour
     {
         health -= damage;
 
-        print ("Acertou a caixa");
+        print("Acertou a caixa");
 
         StartCoroutine(FlashOnHit()); // Pisca em cinza
 
@@ -47,6 +57,12 @@ public class Box : MonoBehaviour
         {
             BreakBox(); // Efeito visual
             Destroy(gameObject);
+        }
+        
+        //Toca o som ao ser atingido
+        if (clipDamageBox != null && audioSourceDamageBox != null)
+        {
+            audioSourceDamageBox.PlayOneShot(clipDamageBox);
         }
     }
 
@@ -94,7 +110,7 @@ public class Box : MonoBehaviour
                         Animator animPlayer = player.GetComponent<Animator>();
                         animPlayer.SetBool("walk", false);
                         animPlayer.SetBool("run", false);
-                        animPlayer.SetBool("jump", false);
+                        //animPlayer.SetBool("jump", false);
                     }
                 }
 
@@ -125,7 +141,7 @@ public class Box : MonoBehaviour
                     Animator anim = playerFinal.GetComponent<Animator>();
                     anim.SetBool("walk", false);
                     anim.SetBool("run", false);
-                    anim.SetBool("jump", false);
+                    //anim.SetBool("jump", false);
                 }
             }
         }
